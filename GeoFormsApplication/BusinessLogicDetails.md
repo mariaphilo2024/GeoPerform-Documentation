@@ -1,61 +1,112 @@
-# Business Logic Details in GeoForms Application
+# Business Logic in GeoForms
 
-GeoForms enforces several critical business rules to ensure data accuracy, regulatory compliance, and seamless integration with VPS and external platforms like Veslink. Below are the key business logic implementations:
+GeoForms is designed to handle vessel form submissions, validate data, and process it for structured storage in VPS. Below are the key business rules and logic implemented in the system.
 
-## 1. Form Creation & Assignment Rules
-- Forms must be assigned to specific vessels or barges based on IMO number or registration number.
-- Each vessel or barge can only have one active form version per report type (e.g., Noon Report, Bunker Report).
-- Forms can be copied between principals (operators) but must be revalidated before use.
+## 1. Form Creation & Data Dictionary Rules
 
-## 2. Submission & Data Validation Rules
-- Forms must be submitted in the latest active version; older versions are flagged for review.
-- Each form has predefined mandatory fields (e.g., IMO number, report time, fuel type).
-- If mandatory fields are missing or incorrect, the form is rejected and requires resubmission.
-- Encrypted email submissions ensure data integrity; only decrypted data is stored.
+### 1.1 Form Structure & Field Definitions
+Forms are composed of multiple fields stored in the Data Dictionary.
+Each field has:
+- **Label** (Frontend name)
+- **Name** (Backend reference)
+- **Type** (Text, Dropdown, Number, Date, Boolean, etc.)
+- **Validation rules** (Required, Min/Max value, Regex, etc.)
+- **Default values** (Pre-populated based on vessel type)
+- **Field mappings** ensure consistency across all forms.
 
-## 3. Approval & Review Process
-- Only approved forms are ingested into VPS; rejected forms require correction.
-- Analysts can edit submitted data before approval, but changes are logged for auditing.
-- Once approved, the form cannot be edited directly—instead, it must be opened for resubmission.
+### 1.2 Conditional Fields & Visibility Rules
+Fields can be displayed/hidden based on conditions.
+#### Example:
+- If **Fuel Type** = "HFO", show **Sulfur Percentage** Field.
+- If **Vessel Type** = "Tanker", show **Tank Capacity** Fields.
 
-## 4. Version Control & Status Management
-- If a vessel submits an older form version, it is listed but cannot be approved until the latest version is activated.
-- Forms go through the following statuses:
-  - **Pending** – Awaiting analyst review.
-  - **Approved** – Data verified and sent to VPS.
-  - **Rejected** – Errors found, requiring vessel resubmission.
-  - **Resubmitted** – Vessel corrected data and resubmitted.
-  - **Open for Resubmit** – Previously approved form is being modified.
+### 1.3 Auto-Populated Fields
+Certain fields are automatically filled based on vessel data.
+#### Example:
+- **IMO Number** is fetched from the database when a vessel name is entered.
+- **Engine Power Output** is auto-filled based on vessel specifications.
 
-## 5. Automated Data Ingestion to VPS
-- Only forms with a valid IMO number and correct mapping fields are ingested.
-- Approved data is transferred to VPS within 10 minutes of approval.
-- VPS automatically overwrites previous records if a new submission for the same report type and date exists.
-- If ingestion fails due to missing IMO or incorrect mapping, an email alert is triggered.
+## 2. Form Submission & Approval Rules
 
-## 6. Duplicate Submission Handling
-- If a vessel sends duplicate reports for the same date and report type, only the latest approved version is retained.
-- If a previous report needs correction, it must be opened for resubmission instead of submitting a duplicate.
+### 2.1 Submission Workflow
+- Forms are filled offline and submitted via email.
+- An **Email Reader Service** extracts JSON data from the email attachments.
+- The system verifies whether the form matches a valid template.
 
-## 7. Bot Automation for Veslink Integration
-- If a vessel is required to submit reports to both GeoForms and Veslink, a bot automates this process.
-- The bot extracts approved data from GeoForms and maps it to Veslink’s format.
-- If the bot fails due to incorrect mapping, an email alert is sent for manual intervention.
+### 2.2 Approval & Rejection Rules
+Submitted forms go through an approval process.
+- Only **approved forms** are eligible for ingestion into VPS.
+- A form is **rejected** if:
+  - Required fields are missing.
+  - IMO/Registration number does not exist in VPS.
+  - Data format is incorrect.
+  - Duplicate entries are detected.
 
-## 8. Data Dictionary & Field Mapping Rules
-- Each form field has a unique JSON key, ensuring standardized data mapping.
-- Certain fields (e.g., fuel type, port name) must match values from the Master Data tables.
-- Conditional fields (e.g., cargo type appearing only if the vessel is carrying cargo) follow visibility and calculation rules.
+### 2.3 Resubmission & Correction
+If a form is rejected:
+- An **error message** is logged.
+- The user receives an email with the **reason for rejection**.
+- The corrected form can be **resubmitted**.
 
-## 9. Report Generation & Audit Trail
-- Approved forms are converted into structured HTML reports (e.g., Noon Reports, Arrival Reports).
-- All user actions (form submissions, approvals, rejections, modifications) are logged in an audit trail.
+## 3. Data Ingestion & Mapping Rules
 
-## 10. Error Handling & Alerts
-- If a vessel submits an invalid form, it is immediately flagged and an email alert is sent.
-- If ingestion to VPS fails, the system retries three times before sending an alert.
-- Analysts receive automated notifications for pending reviews.
+### 3.1 Data Extraction & Transformation
+- JSON data from GeoForms is transformed into structured VPS tables.
+- **Mapping profiles:**
+  - `geoforms` → Noon Report, Arrival Report, Departure Report, Bunker Report.
+  - `geoformspumplog` → Pump performance data.
+
+### 3.2 Field Mapping & Validations
+Fields from JSON are mapped to VPS database fields.
+
+- If a **required field** is missing, an **error is logged**, and the **form is rejected**.
+
+### 3.3 Multi-Table Data Processing
+Some data is split across multiple VPS tables
+
+## 4. Scheduled Processing & Automation
+
+### 4.1 Background Processing Rules
+A **scheduler** runs every **5 minutes** to process **approved forms**.
+Checks for:
+- New forms that need ingestion.
+- Resubmitted forms requiring reprocessing.
+- Ingestion failures that need retries.
+
+### 4.2 Duplicate & Conflict Handling
+Before ingestion, the system checks if a similar record already exists.
+- If a **duplicate** is found:
+  - The **record is skipped** to prevent redundancy.
+  - A **log entry** is created for reference.
+
+## 5. Error Handling & Notifications
+### 5.1 Logging & Alert Mechanism
+All ingestion failures are logged with **error codes**.
+
+### 5.2 Email Alerts & Notifications
+- If **ingestion fails**, an **email alert** is sent to admins.
+- Uses:
+  - **Graph API** (Production)
+  - **SMTP** (QA & Testing)
+
+### 5.3 Retry Mechanism
+If an ingestion attempt **fails**:
+- The form is **queued for retry**.
+
+
+## 6. Vessel-Specific Rules & Scalability
+
+### 6.1 Vessel-Specific Configurations
+Forms can have **different rules** based on **vessel/Barge type**.
+
+
+### 6.2 Auto-Generated Tables for Vessels/Barges
+Some tables **auto-populate** based on vessel/Barge specifications.
+
+  
+
+
 
 ## Conclusion
-These business rules ensure that GeoForms maintains data accuracy, regulatory compliance, and seamless vessel reporting while automating processes for efficiency.
+The business logic in GeoForms ensures **structured data processing, accurate validation, and seamless ingestion** into VPS. The system enforces strict rules to **maintain data integrity, workflow efficiency, and error handling**. 🚀
 
