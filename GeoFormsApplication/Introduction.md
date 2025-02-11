@@ -87,6 +87,7 @@ Certain reports include auto-calculations and validations for accuracy.
 - The backend service reads the email content.
 - Only the encrypted data is used for system processing to prevent tampering.
 - The decrypted data is stored as a JSON file in the GeoForms database.
+- If a form has missing fields, an alert email is sent using Graph API.
 
 ### JSON Data Structure:
 - Data is stored in key-value pairs (e.g., `"report_name": "Noon Report", "voyage_number": "123"`).
