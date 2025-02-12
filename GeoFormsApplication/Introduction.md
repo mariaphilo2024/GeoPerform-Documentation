@@ -42,18 +42,18 @@ Certain fields, like "Report Time," may have different display names while retai
 - Instead of designing a new form from scratch, an existing template can be imported and modified.
 
 ## 6. Scaling & Cloning Forms
-### Principle-Specific Form Creation:
-- Within the Form section, there’s a **Principles** sub-tab.
+### Principal-Specific Form Creation:
+- Within the Form section, there’s a **Principals** sub-tab.
 - When creating a form for a vessel, all associated principles are listed.
 - Users can design unique forms tailored to each principal's needs.
 
-### Copying Form Templates Between Principles:
+### Copying Form Templates Between Principals:
 - To replicate a form template from one principal to another:
   - Select the desired principle.
   - Use the **Copy From** option to choose the source principal's form.
   - The form template is duplicated, allowing for further modifications as needed.
 
-### Copying Data Between Principles:
+### Copying Data Between Principals:
 - In the **View** section, there's a feature to copy data entries between principals.
 - If data is entered under one principle, it can be copied to another using the **Copy** option.
 
