@@ -1,4 +1,4 @@
-# Business Logic in GeoForms
+# Business Logic Details in GeoForms
 
 GeoForms is designed to handle vessel form submissions, validate data, and process it for structured storage in VPS. Below are the key business rules and logic implemented in the system.
 
