@@ -1,7 +1,7 @@
 # 🌐 Explanation of Routing Flow
 
 ## 1️⃣ Home Page & Default Route
-- **Landing page**: `/page/template-library`
+- **Landing page**: `https://geoforms-qa.azurewebsites.net/page/template-library`
 - **Redirects to**: Template Library (`TemplateLibraryComponent`)
 
 ## 2️⃣ Template Library
