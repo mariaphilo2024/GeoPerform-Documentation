@@ -1,5 +1,7 @@
 # Data Flow Diagram for GeoForms Application
 
+- ![image](https://github.com/user-attachments/assets/dbd91984-f49a-4c50-a6ad-9ae0eae8fcf0)
+
 ## 1. External Entities
 - **Vessel/Barge Crew**: Submits completed forms.
 - **Analysts**: Review and approve submitted forms.
@@ -15,4 +17,4 @@
 ## 3. Data Stores
 - **GeoForms Database**: Stores submitted form data in JSON format.
 - **VPS System**: Holds the latest approved data for analytics and decision-making.
-- ![image](https://github.com/user-attachments/assets/dbd91984-f49a-4c50-a6ad-9ae0eae8fcf0)
+
