@@ -14,7 +14,7 @@ These applications work together to ensure seamless data flow from vessel report
 
 GeoForms is a vessel reporting application that enables form creation, submission, approval, and automated data ingestion into the VPS system while integrating with external platforms like Veslink.
 
-[Introduction](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/Introduction.md)
+[Introduction](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/Introduction.md) 📝
 
 [GeoFormsDataFlowDiagram](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FormsDataFlowDiagram.md) 🖼️
 
