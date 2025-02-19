@@ -84,7 +84,7 @@ The main sections of the application are available in the left-side navigation m
 ### **10.2 🛠️ Managing Permissions**
 1. Navigate to **⚙️ User Settings**.
 2. Select a user and click **✏️ Edit Permissions**.
-3. Choose **📖 Read, ✍️ Write, or 🔓 Full Access**.
+3. Choose **📖 Read, ✍️ Write, 🔓 Full Access, or 🚫 None**.
 4. Click **💾 Save**.
 
 ## **11. 🛠️ Common Errors & Troubleshooting**
