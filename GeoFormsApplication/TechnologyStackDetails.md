@@ -122,10 +122,6 @@
 
 ## 5. Frontend Dependencies (Angular)
 
-### Angular Dependencies
-
-   # Angular Project Dependencies
-
 ## Dependencies
 
 ### @angular Packages
