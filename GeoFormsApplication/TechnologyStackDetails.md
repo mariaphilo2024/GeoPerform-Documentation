@@ -122,35 +122,68 @@
 
 ## 5. Frontend Dependencies (Angular)
 
-### Key Angular Dependencies
-- @angular/core (15.0.1)
-- @angular/common (15.0.1)
-- @angular/forms (15.0.1)
-- @angular/router (15.0.1)
-- @angular/platform-browser (15.0.1)
-- @angular/platform-browser-dynamic (15.0.1)
-- primeng (15.2.0)
-- primeflex (3.3.0)
-- rxjs (7.5.6)
-- bootstrap-icons (1.10.3)
-- lodash-es (4.17.21)
-- ng-keyboard-shortcuts (13.0.8)
+### Angular Dependencies
 
-### ABP Framework Dependencies
-- @abp/ng.account (~7.0.1)
-- @abp/ng.components (~7.0.1)
-- @abp/ng.core (~7.0.1)
-- @abp/ng.identity (~7.0.1)
-- @abp/ng.oauth (~7.0.1)
-- @abp/ng.setting-management (~7.0.1)
-- @abp/ng.tenant-management (~7.0.1)
-- @abp/ng.theme.lepton-x (^2.0.4)
-- @abp/ng.theme.shared (~7.0.1)
+   # Angular Project Dependencies
 
-### Dev Dependencies
-- @angular-eslint (15.1.0)
-- @angular/cli (15.0.1)
-- @typescript-eslint/eslint-plugin (5.36.2)
-- karma (6.3.0)
-- ng-packagr (15.0.1)
-- typescript (4.8.3)
+## Dependencies
+
+### @angular Packages
+- **@angular/animations**: `^15.1.0`
+- **@angular/cdk**: `^15.1.0`
+- **@angular/common**: `^15.1.0`
+- **@angular/compiler**: `^15.1.0`
+- **@angular/core**: `^15.1.0`
+- **@angular/forms**: `^15.1.0`
+- **@angular/platform-browser**: `^15.1.0`
+- **@angular/platform-browser-dynamic**: `^15.1.0`
+- **@angular/router**: `^15.1.0`
+
+### Authentication & JWT
+- **@auth0/angular-jwt**: `^5.2.0`
+
+### Utility Libraries
+- **angular-mentions**: `^1.5.0`
+- **jsondiffpatch**: `^0.5.0`
+- **lodash-es**: `^4.17.21`
+
+### Cookie & JSON Handling
+- **ngx-cookie-service-ssr**: `^17.0.1`
+- **ngx-json-viewer**: `^3.2.1`
+
+### UI Libraries
+- **primeflex**: `^3.3.0`
+- **primeicons**: `^6.0.1`
+- **primeng**: `^15.1.1`
+- **quill**: `^1.3.7`
+
+### RxJS & Utility
+- **rxjs**: `~7.8.0`
+- **tslib**: `^2.3.0`
+- **zone.js**: `~0.12.0`
+
+# Development Dependencies
+
+## Angular CLI & Build Tools
+- **@angular-devkit/build-angular**: `^15.1.2`
+- **@angular/cli**: `~15.1.2`
+- **@angular/compiler-cli**: `^15.1.0`
+
+## TypeScript & Node Types
+- **@types/node**: `~20.1.4`
+- **typescript**: `~4.9.4`
+
+## Testing Frameworks
+- **@types/jasmine**: `~4.3.0`
+- **jasmine-core**: `~4.5.0`
+- **karma**: `~6.4.0`
+- **karma-chrome-launcher**: `~3.1.0`
+- **karma-coverage**: `~2.2.0`
+- **karma-jasmine**: `~5.1.0`
+- **karma-jasmine-html-reporter**: `~2.0.0`
+
+## jQuery & Lodash Type Definitions
+- **@types/jquery**: `^3.5.20`
+- **@types/jqueryui**: `^1.12.18`
+- **@types/lodash-es**: `^4.17.8`
+
