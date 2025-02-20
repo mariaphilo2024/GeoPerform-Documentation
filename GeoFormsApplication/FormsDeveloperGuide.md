@@ -6,8 +6,6 @@
 - **Visual Studio 2022**
 - **.NET Core 7+**
 - **Git**
-- **Node.js & npm**
-- **Angular CLI**
 - **SQL Server** (for the database)
 
 ## Clone the Repository
@@ -92,7 +90,8 @@ To test authorized APIs, log in manually at `https://localhost:**/Account/Login`
 - **Visual Studio Code**
 - **npm & yarn**
 - **Angular CLI**
-
+-  **Node.js**
+  
 ### Clone the Frontend Repository
 
 ```sh
