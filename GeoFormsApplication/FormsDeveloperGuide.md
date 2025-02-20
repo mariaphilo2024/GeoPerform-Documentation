@@ -63,7 +63,7 @@ Ctrl + F5
 
 3. The initial seed data creates the **admin** user (password: `1q2w3E*`).
 
-### Alternative: Update Database using EF Core
+### Update Database using EF Core
 
 Use the Ef Core `Update-Database` command which applies pending schema migrations during development time.
 
