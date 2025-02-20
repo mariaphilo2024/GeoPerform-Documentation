@@ -1,7 +1,9 @@
-## **Serilog Integration in GeoForms Backend (.NET)**
+# Error Handling and Logging: Mechanisms for Exception Handling and Logging using Serilog
 
-### **1. Installing Serilog Packages**
-To integrate Serilog, install the following NuGet packages:
+## 1. Install Required NuGet Packages
+
+Run the following commands in **Package Manager Console** or **.NET CLI**:
+
 ```sh
 Install-Package Serilog.AspNetCore
 Install-Package Serilog.Sinks.Console
@@ -9,13 +11,16 @@ Install-Package Serilog.Sinks.File
 Install-Package Serilog.Sinks.MSSqlServer
 ```
 
-### **2. Configuring Serilog in `Program.cs`**
-Modify `Program.cs` to configure Serilog for logging.
+These packages provide Serilog logging capabilities and different output destinations (sinks).
 
-#### **Updated `Program.cs` for Serilog:**
+---
+
+## 2. Configure Serilog in `Program.cs`
+
+Modify the `Program.cs` file to configure Serilog globally.
+
 ```csharp
 using System;
-using System.Threading.Tasks;
 using Serilog;
 using Serilog.Events;
 using Microsoft.AspNetCore.Builder;
@@ -23,58 +28,60 @@ using Microsoft.Extensions.Hosting;
 
 public class Program
 {
-    public async static Task<int> Main(string[] args)
+    public static void Main(string[] args)
     {
-        // Configure Serilog for logging
+        // Step 1: Configure Serilog
         Log.Logger = new LoggerConfiguration()
 #if DEBUG
-            .MinimumLevel.Debug() // Set log level to Debug in development mode
+            .MinimumLevel.Debug() // Debug level for development
 #else
-            .MinimumLevel.Information() // Set log level to Information in production
+            .MinimumLevel.Information() // Information level for production
 #endif
             .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
             .MinimumLevel.Override("Microsoft.EntityFrameworkCore", LogEventLevel.Warning)
             .Enrich.FromLogContext()
-            .WriteTo.Async(c => c.File("Logs/logs.txt", rollingInterval: RollingInterval.Day, retainedFileCountLimit: 20)) // Log to file
-#if DEBUG
-            .WriteTo.Async(c => c.Console()) // Log to console in development
-#endif
+            .WriteTo.Console() // Log to console
+            .WriteTo.File("Logs/logs.txt", rollingInterval: RollingInterval.Day, retainedFileCountLimit: 30) // Log to a file
             .CreateLogger();
 
         try
         {
-            Log.Information("Starting GeoForms.HttpApi.Host.");
+            Log.Information("Starting application...");
+            
             var builder = WebApplication.CreateBuilder(args);
-            builder.Host.UseSerilog(); // Integrate Serilog with application
+            builder.Host.UseSerilog(); // Step 2: Add Serilog to the application
+
             var app = builder.Build();
-            await app.RunAsync();
-            return 0;
+            app.Run();
         }
         catch (Exception ex)
         {
-            Log.Fatal(ex, "Host terminated unexpectedly!"); // Log fatal errors
-            return 1;
+            Log.Fatal(ex, "Application terminated unexpectedly!");
         }
         finally
         {
-            Log.CloseAndFlush(); // Ensure logs are flushed before exit
+            Log.CloseAndFlush(); // Step 3: Ensure logs are flushed on exit
         }
     }
 }
 ```
 
-### **3. Using Serilog in a Class**
-To log information within a class, inject `ILogger<T>`.
+---
 
-#### **Example in a Service Class:**
+## 3. Inject Serilog into Services or Controllers
+
+You can inject `ILogger<T>` in services, repositories, and controllers.
+
+### **Example in a Service Class**
+
 ```csharp
 using Microsoft.Extensions.Logging;
 
-public class SampleService
+public class MyService
 {
-    private readonly ILogger<SampleService> _logger;
+    private readonly ILogger<MyService> _logger;
 
-    public SampleService(ILogger<SampleService> logger)
+    public MyService(ILogger<MyService> logger)
     {
         _logger = logger;
     }
@@ -83,9 +90,9 @@ public class SampleService
     {
         try
         {
-            _logger.LogInformation("Processing data started.");
+            _logger.LogInformation("Processing started...");
             // Business logic here
-            _logger.LogInformation("Processing data completed successfully.");
+            _logger.LogInformation("Processing completed successfully.");
         }
         catch (Exception ex)
         {
@@ -95,23 +102,146 @@ public class SampleService
 }
 ```
 
-### **4. Logging Levels in Serilog**
-Serilog provides different logging levels:
-- `Log.Debug("Debug message");`
-- `Log.Information("Informational message");`
-- `Log.Warning("Warning message");`
-- `Log.Error("Error message");`
-- `Log.Fatal("Fatal error message");`
+---
 
-### **5. Logging to SQL Server**
-Example configuration for logging to SQL Server:
+## 4. Configure Serilog via `appsettings.json`
+
+Another way to configure Serilog is using the `appsettings.json` file.
+
+### **Add Serilog Configuration in `appsettings.json`**
+
+```json
+{
+  "Serilog": {
+    "Using": ["Serilog.Sinks.Console", "Serilog.Sinks.File"],
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Microsoft": "Warning",
+        "Microsoft.Hosting.Lifetime": "Information"
+      }
+    },
+    "WriteTo": [
+      { "Name": "Console" },
+      {
+        "Name": "File",
+        "Args": { "path": "Logs/logs.txt", "rollingInterval": "Day" }
+      }
+    ],
+    "Enrich": ["FromLogContext"]
+  }
+}
+```
+
+### **Modify `Program.cs` to Read Configuration**
+
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+builder.Host.UseSerilog((context, configuration) =>
+    configuration.ReadFrom.Configuration(context.Configuration));
+```
+
+---
+
+## 5. Enable Logging to SQL Server (Optional)
+
+To log messages to a **SQL Server** database:
+
+### **Install the SQL Server Sink Package**
+
+```sh
+Install-Package Serilog.Sinks.MSSqlServer
+```
+
+### **Modify Serilog Configuration**
+
 ```csharp
 Log.Logger = new LoggerConfiguration()
-    .WriteTo.MSSqlServer("Server=yourServer;Database=LogsDB;User Id=yourUser;Password=yourPassword;",
-        new Serilog.Sinks.MSSqlServer.ColumnOptions())
+    .WriteTo.MSSqlServer(
+        connectionString: "Server=myServer;Database=LogsDB;User Id=myUser;Password=myPassword;",
+        sinkOptions: new Serilog.Sinks.MSSqlServer.MSSqlServerSinkOptions
+        {
+            TableName = "LogTable",
+            AutoCreateSqlTable = true
+        })
     .CreateLogger();
 ```
-Serilog is a powerful, flexible logging library for .NET applications. It supports structured logging,
-multiple sinks (e.g., file, console, database), and asynchronous logging for improved performance.
-By integrating Serilog, developers can efficiently monitor application behavior and troubleshoot issues effectively.
+
+---
+
+## 6. Implement Global Exception Handling with Serilog
+
+To catch unhandled exceptions and log them using Serilog, create a middleware.
+
+### **Exception Handling Middleware**
+
+```csharp
+using System;
+using System.Net;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+using Serilog;
+
+public class ExceptionHandlingMiddleware
+{
+    private readonly RequestDelegate _next;
+
+    public ExceptionHandlingMiddleware(RequestDelegate next)
+    {
+        _next = next;
+    }
+
+    public async Task Invoke(HttpContext context)
+    {
+        try
+        {
+            await _next(context);
+        }
+        catch (Exception ex)
+        {
+            Log.Error(ex, "Unhandled exception occurred.");
+            context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+            await context.Response.WriteAsync("An unexpected error occurred.");
+        }
+    }
+}
+```
+
+### **Register Middleware in `Program.cs`**
+
+```csharp
+var app = builder.Build();
+app.UseMiddleware<ExceptionHandlingMiddleware>(); // Add middleware
+app.Run();
+```
+
+---
+
+## 7. Logging Levels
+
+Serilog provides different log levels for filtering logs:
+
+- `Log.Debug("Debug message");` – Detailed information, typically useful for debugging.
+- `Log.Information("Informational message");` – General application flow.
+- `Log.Warning("Warning message");` – Something unexpected happened, but the application continues.
+- `Log.Error("Error message");` – A failure that needs attention.
+- `Log.Fatal("Fatal error message");` – Critical issue causing application crash.
+
+---
+
+## 8. Best Practices
+
+- **Use structured logging** instead of plain text.
+- **Avoid logging sensitive information** (e.g., passwords, API keys).
+- **Use correlation IDs** for tracing logs across requests.
+- **Archive or clean up old logs** periodically to prevent storage issues.
+- **Monitor logs using dashboards** like Seq, Kibana, or Application Insights.
+
+---
+
+## Conclusion
+
+By following these steps, you can effectively integrate **Serilog** in .NET application, ensuring structured and efficient logging for debugging, monitoring, and error tracking.
+
 
