@@ -95,11 +95,10 @@ To test authorized APIs, log in manually at `https://localhost:**/Account/Login`
 
 ### Clone the Frontend Repository
 
-Refer to **Technology Stack Details** and install the required packages.
-
 ```sh
 git clone https://github.com/Geoservedmcc/geo-perform-website-primeng-forms.git
 ```
+Refer to **Technology Stack Details** and install the required packages.
 
 ### Run the Angular App
 
