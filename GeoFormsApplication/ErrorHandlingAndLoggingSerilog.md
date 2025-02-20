@@ -230,8 +230,6 @@ Serilog provides different log levels for filtering logs:
 
 ---
 
----
-
 ## Conclusion
 
 By following these steps, you can effectively integrate **Serilog** in .NET application, ensuring structured and efficient logging for debugging, monitoring, and error tracking.
