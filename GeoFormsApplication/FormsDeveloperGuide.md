@@ -1,4 +1,4 @@
-# Setting Up the Local Development Environment for GeoForms
+# Developer Guide: Setting Up the Local Development Environment for GeoForms
 
 ## Prerequisites
 
@@ -17,6 +17,7 @@ git clone https://github.com/Geoservedmcc/geo-forms.git
 ```
 
 Navigate to the `aspnet-core` folder and open `GeoForms.sln` in Visual Studio.
+Refer to **Technology Stack Details** and install the required packages.
 
 ## Configure Connection Strings
 
@@ -96,6 +97,8 @@ To test authorized APIs, log in manually at `https://localhost:**/Account/Login`
 - **Angular CLI**
 
 ### Clone the Frontend Repository
+
+Refer to **Technology Stack Details** and install the required packages.
 
 ```sh
 git clone https://github.com/Geoservedmcc/geo-perform-website-primeng-forms.git
