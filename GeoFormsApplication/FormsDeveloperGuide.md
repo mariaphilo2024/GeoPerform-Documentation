@@ -74,10 +74,6 @@ Use the Ef Core `Update-Database` command which applies pending schema migration
 Update-Database
 ```
 
-```sh
-Update-Database
-```
-
 ## Run the Application
 
 Ensure that `GeoForms.HttpApi.Host` is the startup project and run the application. 
