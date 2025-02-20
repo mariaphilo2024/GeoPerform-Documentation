@@ -1,4 +1,4 @@
-#  Mechanisms for Exception Handling and Logging using Serilog
+#  Mechanisms for Exception Handling and Logging using Serilog 🚨
 
 ## 1. Install Required NuGet Packages
 
