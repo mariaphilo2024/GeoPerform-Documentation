@@ -1,4 +1,4 @@
-# Error Handling and Logging: Mechanisms for Exception Handling and Logging using Serilog
+#  Mechanisms for Exception Handling and Logging using Serilog
 
 ## 1. Install Required NuGet Packages
 
@@ -8,7 +8,7 @@ Run the following commands in **Package Manager Console** or **.NET CLI**:
 Install-Package Serilog.AspNetCore
 Install-Package Serilog.Sinks.Console
 Install-Package Serilog.Sinks.File
-Install-Package Serilog.Sinks.MSSqlServer
+Install-Package Serilog.Sinks.MSSqlServer (if Enable Logging to SQL Server)
 ```
 
 These packages provide Serilog logging capabilities and different output destinations (sinks).
@@ -232,6 +232,6 @@ Serilog provides different log levels for filtering logs:
 
 ## Conclusion
 
-By following these steps, you can effectively integrate **Serilog** in .NET application, ensuring structured and efficient logging for debugging, monitoring, and error tracking.
+By following these steps, we can effectively integrate **Serilog** in .NET application, ensuring structured and efficient logging for debugging, monitoring, and error tracking.
 
 
