@@ -63,6 +63,15 @@ Ctrl + F5
 
 ### Alternative: Update Database using EF Core
 
+Use the Ef Core `Update-Database` command which applies pending schema migrations during development time.
+
+- Right-click on the `GeoForms.HttpApi.Host` project and select **Set as StartUp Project**.
+- Open the **Package Manager Console**, select the `GeoStem.EntityFrameworkCore` project as the **Default Project**, and run the `Update-Database` command:
+
+```sh
+Update-Database
+```
+
 ```sh
 Update-Database
 ```
@@ -149,3 +158,28 @@ ng help
 ```
 
 Or check out the [Angular CLI Documentation](https://angular.io/cli).
+
+## Running the Application in Production
+
+Ensure that the `GeoForms.HttpApi.Host` project is the startup project and run it to launch the API.
+
+Use **Postman** to test API endpoints.
+
+## Logs & Debugging
+- Logs are stored in the `/logs` folder.
+- Run `npm run lint` for frontend code linting.
+- Run `dotnet test` for backend tests.
+
+## Troubleshooting
+
+### Issue: Unable to connect to the database
+**Solution:** Verify `DATABASE_URL` in `.env` and check PostgreSQL service.
+
+### Issue: Backend not running
+**Solution:** Check `.NET SDK` version and ensure dependencies are installed.
+
+### Issue: Frontend build fails
+**Solution:** Run `npm install` and ensure Angular CLI is installed.
+
+## Conclusion
+By following these steps, you should have a fully functional local development environment for GeoForms. Happy coding!
