@@ -17,6 +17,7 @@ git clone https://github.com/Geoservedmcc/geo-forms.git
 ```
 
 Navigate to the `aspnet-core` folder and open `GeoForms.sln` in Visual Studio.
+
 Refer to **Technology Stack Details** and install the required packages.
 
 ## Configure Connection Strings
