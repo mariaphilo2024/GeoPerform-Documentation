@@ -66,7 +66,7 @@ Ctrl + F5
 Use the Ef Core `Update-Database` command which applies pending schema migrations during development time.
 
 - Right-click on the `GeoForms.HttpApi.Host` project and select **Set as StartUp Project**.
-- Open the **Package Manager Console**, select the `GeoStem.EntityFrameworkCore` project as the **Default Project**, and run the `Update-Database` command:
+- Open the **Package Manager Console**, select the `GeoForms.EntityFrameworkCore` project as the **Default Project**, and run the `Update-Database` command:
 
 ```sh
 Update-Database
