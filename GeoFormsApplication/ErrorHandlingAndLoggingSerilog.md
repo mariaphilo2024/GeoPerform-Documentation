@@ -230,14 +230,6 @@ Serilog provides different log levels for filtering logs:
 
 ---
 
-## 8. Best Practices
-
-- **Use structured logging** instead of plain text.
-- **Avoid logging sensitive information** (e.g., passwords, API keys).
-- **Use correlation IDs** for tracing logs across requests.
-- **Archive or clean up old logs** periodically to prevent storage issues.
-- **Monitor logs using dashboards** like Seq, Kibana, or Application Insights.
-
 ---
 
 ## Conclusion
