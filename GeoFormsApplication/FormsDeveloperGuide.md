@@ -161,23 +161,20 @@ Or check out the [Angular CLI Documentation](https://angular.io/cli).
 
 Ensure that the `GeoForms.HttpApi.Host` project is the startup project and run it to launch the API.
 
-Use **Postman** to test API endpoints.
 
 ## Logs & Debugging
 - Logs are stored in the `/logs` folder.
-- Run `npm run lint` for frontend code linting.
-- Run `dotnet test` for backend tests.
 
 ## Troubleshooting
 
 ### Issue: Unable to connect to the database
-**Solution:** Verify `DATABASE_URL` in `.env` and check PostgreSQL service.
+**Solution:** Verify its connected to **VPN.**
 
 ### Issue: Backend not running
 **Solution:** Check `.NET SDK` version and ensure dependencies are installed.
 
 ### Issue: Frontend build fails
-**Solution:** Run `npm install` and ensure Angular CLI is installed.
+**Solution:** Run `npm install` and ensure correct version of Angular CLI is installed.
 
 ## Conclusion
 By following these steps, you should have a fully functional local development environment for GeoForms. Happy coding!
