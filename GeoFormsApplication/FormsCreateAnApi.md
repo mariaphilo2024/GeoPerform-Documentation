@@ -139,10 +139,9 @@ public class GeoFormsApplicationAutoMapperProfile : Profile
 - Go to the Permissions folder
 - Open a file named GeoFormsPermissions.cs.
 - Add a Permission for PortMaster.
-  
-  ```
+
+ ```
    public static class Port
-  
  {
      public const string Default = DataMasterGroup + ".Port";
      public const string Create = Default + ".Create";
