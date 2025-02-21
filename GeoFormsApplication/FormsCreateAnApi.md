@@ -142,7 +142,7 @@ public class GeoFormsApplicationAutoMapperProfile : Profile
   
   ```
    public static class Port
-  ```
+  
  {
      public const string Default = DataMasterGroup + ".Port";
      public const string Create = Default + ".Create";
@@ -151,11 +151,14 @@ public class GeoFormsApplicationAutoMapperProfile : Profile
      public const string Delete = Default + ".Delete";
  }
 
+```
+
 
 **Step 9: Create PortMaster Service in GeoForms.Application**
 - Go to PortMasters folder
 - Open PortMasterService.cs
 - Create MasterPermission for PortMaster.
+
 ```
 namespace GeoForms.PortMasters;
 public class PortMasterService : BasePageService<PortMaster, PortMasterdto, CreatePortMasterdto, UpdatePortMasterdto>
@@ -189,7 +192,7 @@ public class PortMasterService : BasePageService<PortMaster, PortMasterdto, Crea
       var portMasterDto = ObjectMapper.Map<List<PortMaster>, List<PortMasterdto>>(portMaster);
       return portMasterDto;
   }
-```
+
 ```
 **Step 10: Create API endpoints to perform CRUD operations on PortMaster** 
 - Go to GeoForms.HttpApi.Host
