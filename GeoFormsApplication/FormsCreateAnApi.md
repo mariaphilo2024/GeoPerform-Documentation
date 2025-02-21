@@ -121,9 +121,8 @@ namespace GeoForms.PortMasters
 - Open GeoFormsApplicationAutoMapperProfile.cs file
 - Add Mapping for PortMaster
   
-  ```
+ ``` 
   namespace GeoForms;
-```  
 public class GeoFormsApplicationAutoMapperProfile : Profile
 {
     public GeoFormsApplicationAutoMapperProfile()
