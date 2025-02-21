@@ -81,7 +81,7 @@ public class GeoFormsDbContext :
 - DTOs act as a protective layer between the database and the API consumers, ensuring that changes to the database schema do not directly impact the API contracts.
 - DTOs are useful for validating input data when creating or updating records.
 - create a folder named PortMasters.
-- create a file named PortMasterDto.cs.
+- create a file named PortMasterdto.cs.
 
 ```
 namespace GeoForms.PortMasters
