@@ -32,6 +32,8 @@ GeoForms is a vessel reporting application that enables form creation, submissio
 
 [Error Handling and Logging using Serilog](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/ErrorHandlingAndLoggingSerilog.md) 🚨
 
+[File Structure and API](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FormsCreateAnApi.md) 📜
+
 [User Guide](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FormsUserGuide.md) 📘
 
 
