@@ -123,6 +123,7 @@ namespace GeoForms.PortMasters
   
   ```
   namespace GeoForms;
+```  
 public class GeoFormsApplicationAutoMapperProfile : Profile
 {
     public GeoFormsApplicationAutoMapperProfile()
