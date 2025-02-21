@@ -136,10 +136,10 @@ public class GeoFormsApplicationAutoMapperProfile : Profile
         
 ```
 
-**Step 9: Register Master Permission in GeoForms.Application**
+**Step 8: Create PortMaster Service in GeoForms.Application**
 - Go to PortMasters folder
 - Open PortMasterService.cs
-- Register MasterPermission for PortMaster.
+- Create MasterPermission for PortMaster.
 ```
 namespace GeoForms.PortMasters;
 public class PortMasterService : BasePageService<PortMaster, PortMasterdto, CreatePortMasterdto, UpdatePortMasterdto>
