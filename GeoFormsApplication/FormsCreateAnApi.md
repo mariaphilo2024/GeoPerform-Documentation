@@ -135,7 +135,22 @@ public class GeoFormsApplicationAutoMapperProfile : Profile
         
 ```
 
-**Step 8: Create PortMaster Service in GeoForms.Application**
+**Step 8: Manage Permission for PortMaster API in GeoForms.Application.Contracts**
+- Go to the Permissions folder
+- Open a file named GeoFormsPermissions.cs.
+- Add a Permission for PortMaster.
+  ```
+   public static class Port
+ {
+     public const string Default = DataMasterGroup + ".Port";
+     public const string Create = Default + ".Create";
+     //public const string View = Default + ".View";
+     public const string Update = Default + ".Update";
+     public const string Delete = Default + ".Delete";
+ }
+```
+
+**Step 9: Create PortMaster Service in GeoForms.Application**
 - Go to PortMasters folder
 - Open PortMasterService.cs
 - Create MasterPermission for PortMaster.
@@ -174,7 +189,7 @@ public class PortMasterService : BasePageService<PortMaster, PortMasterdto, Crea
   }
 ```
 
-**Step 9: Create API endpoints to perform CRUD operations on PortMaster** 
+**Step 10: Create API endpoints to perform CRUD operations on PortMaster** 
 - Go to GeoForms.HttpApi.Host
 - Right click on, Select Set as Starup Project
 - Run the Project.
