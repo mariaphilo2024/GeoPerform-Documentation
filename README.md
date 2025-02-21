@@ -24,6 +24,7 @@ GeoForms is a vessel reporting application that enables form creation, submissio
 [Developer Guide](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FormsDeveloperGuide.md) 🚀
 
 [Technology Stack Details](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/TechnologyStackDetails.md) 🖥️
+**(Dependencies)**
 
 [GeoFormsDataFlowDiagram](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FormsDataFlowDiagram.md) 📥
 
