@@ -174,7 +174,7 @@ public class PortMasterService : BasePageService<PortMaster, PortMasterdto, Crea
   }
 ```
 
-**Step 10: Create API endpoints to perform CRUD operations on PortMaster** 
+**Step 9: Create API endpoints to perform CRUD operations on PortMaster** 
 - Go to GeoForms.HttpApi.Host
 - Right click on, Select Set as Starup Project
 - Run the Project.
