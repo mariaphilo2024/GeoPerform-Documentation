@@ -139,6 +139,7 @@ public class GeoFormsApplicationAutoMapperProfile : Profile
 - Go to the Permissions folder
 - Open a file named GeoFormsPermissions.cs.
 - Add a Permission for PortMaster.
+  
   ```
    public static class Port
  {
@@ -148,9 +149,9 @@ public class GeoFormsApplicationAutoMapperProfile : Profile
      public const string Update = Default + ".Update";
      public const string Delete = Default + ".Delete";
  }
+
  
-```
-```
+
 **Step 9: Create PortMaster Service in GeoForms.Application**
 - Go to PortMasters folder
 - Open PortMasterService.cs
