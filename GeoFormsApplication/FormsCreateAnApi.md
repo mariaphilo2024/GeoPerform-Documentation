@@ -62,7 +62,7 @@ public class GeoFormsDbContext :
 - Go to GeoForms.DbMigrator. Open appsettings.json.
 - Add or update the ConnectionStrings section to include the database connection string.
   ```
-  ConnectionStrings": {
+  "ConnectionStrings": {
     "Default": "Server=localhost\\SQLEXPRESS;Database=GeoForms;Trusted_Connection=True;TrustServerCertificate=True"
   }
   ```
