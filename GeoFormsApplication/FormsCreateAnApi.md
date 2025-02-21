@@ -167,6 +167,12 @@ public class PortMasterService : BasePageService<PortMaster, PortMasterdto, Crea
         this.formLibraryRepo = formLibraryRepo;
         this.formLibraryClientRepo = formLibraryClientRepo;
     }
+  public async Task<List<PortMasterdto>> GetPortListAsync()
+  {
+      var portMaster = await Repository.GetListAsync();
+      var portMasterDto = ObjectMapper.Map<List<PortMaster>, List<PortMasterdto>>(portMaster);
+      return portMasterDto;
+  }
 ```
 
 **Step 10: Create API endpoints to perform CRUD operations on PortMaster** 
