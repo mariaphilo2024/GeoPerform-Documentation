@@ -245,6 +245,27 @@ public class GeoFormsApplicationAutoMapperProfile : Profile
 - Go to the Permissions folder
 - Open a file named GeoFormsPermissions.cs.
 - Add a Permission for PortMaster.
+```
+  GeoForms.Application.Contracts
+│── Dependencies
+│── Admin
+│── CargoGrades
+│── Clients
+│── ConsumerTypes
+│── Core
+│── DataDictionaries
+│── DataUsers
+│── FormLibraries
+│── FuelTypes
+│── Permissions
+│   │── GeoFormsPermissionDefinitionProvider.cs
+│   │── GeoFormsPermissions.cs
+│   └── GeoFormsPermissions
+│── PortMasters
+│── SubmittedForms
+│── SupplierMasters
+│── TemplateLibraries
+```
 
  ```
    public static class Port
@@ -263,6 +284,31 @@ public class GeoFormsApplicationAutoMapperProfile : Profile
 - Go to PortMasters folder
 - Open PortMasterService.cs
 - Create MasterPermission for PortMaster.
+
+```
+GeoForms.Application
+│── Dependencies
+│── Properties
+│── Admin
+│── CargoGrades
+│── Clients
+│── ConsumerTypes
+│── Core
+│── DataDictionaries
+│── DataUsers
+│── Emails
+│── FormLibraries
+│── FuelTypes
+│── PortMasters
+│   │── PortMasterService.cs
+│   └── PortMasterService
+│── SubmittedForms
+│── SupplierMasters
+│── TemplateLibraries
+│── User
+
+```
+
 
 ```
 namespace GeoForms.PortMasters;
