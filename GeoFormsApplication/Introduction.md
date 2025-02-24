@@ -20,6 +20,9 @@ The GeoForms Application is responsible for:
 - **Data Master:** Holds various master data.
 - **User Settings:** Defines permissions and roles.
 
+  ![image](https://github.com/user-attachments/assets/58bb1c8b-710a-4f19-a395-e7ed380753e2)
+
+
 ## 3. Data Dictionary (Field Creation)
 Fields represent input elements within forms (e.g., Vessel Name, IMO Number, Barge Name, Registration Number). Each field includes:
 - **Label:** Frontend display name.
