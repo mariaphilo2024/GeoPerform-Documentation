@@ -12,7 +12,61 @@ Most common types of APIs.
 
 Here are the steps to create an API for **Port Master**. 
 
+
+## GeoForms Solution Structure
+
+```
+GeoForms (Solution)
+│── src
+│   │── GeoForms.Application
+│   │── GeoForms.Application.Contracts
+│   │── GeoForms.DbMigrator
+│   │── GeoForms.Domain
+│   │── GeoForms.Domain.Shared
+│   │── GeoForms.EntityFrameworkCore
+│   │── GeoForms.HttpApi
+│   │── GeoForms.HttpApi.Client
+│   │── GeoForms.HttpApi.Host
+
+```
+
  **Step1: Create the PortMasters folder and PortMaster class in the Domain layer.** 
+## GeoForms Solution Structure
+
+```
+GeoForms (Solution)
+│── src
+│   │── GeoForms.Application
+│   │── GeoForms.Application.Contracts
+│   │── GeoForms.DbMigrator
+│   │── GeoForms.Domain
+│   │   │── Dependencies
+│   │   │── Properties
+│   │   │── Admin
+│   │   │── ApiKeys
+│   │   │── CargoGrades
+│   │   │── Clients
+│   │   │── ConsumerTypes
+│   │   │── Data
+│   │   │── DataDictionaries
+│   │   │── DataSeed
+│   │   │── DataUsers
+│   │   │── FormLibraries
+│   │   │── FuelTypes
+│   │   │── OpenIddict
+│   │   │── PortMasters
+│   │   │   │── PortMaster.cs
+│   │   │── Settings
+│   │   │── SubmittedForms
+│   │   │── SupplierMasters
+│   │── GeoForms.Domain.Shared
+│   │── GeoForms.EntityFrameworkCore
+│   │── GeoForms.HttpApi
+│   │── GeoForms.HttpApi.Client
+│   │── GeoForms.HttpApi.Host
+```
+
+ 
  ```
 namespace GeoForms.PortMasters
 {
@@ -25,7 +79,27 @@ namespace GeoForms.PortMasters
 }
 ```
 **Step 2: Add a DbSet for PortMaster in DbContext in EntityFrameWorkCore**
-In the **DbContext class**, add a **DbSet** property for the PortMaster entity. This will enable Entity Framework Core to track and manage PortMaster entities and will map it to a PortMasters table in the database.
+In the **GeoFormsDbContext.cs**, add a **DbSet** property for the PortMaster entity. This will enable Entity Framework Core to track and manage PortMaster entities and will map it to a PortMasters table in the database.
+
+```
+│── GeoForms.Domain.Shared
+│   │── GeoForms.EntityFrameworkCore
+│   │   │── Dependencies
+│   │   │── Properties
+│   │   │── EntityFrameworkCore
+│   │   │   │── EntityFrameworkCoreGeoFormsDb.cs
+│   │   │   │── GeoFormsDbContext.cs
+│   │   │   │   │── GeoFormsDbContext
+│   │   │   │── GeoFormsDbContextFactory.cs
+│   │   │   │── GeoFormsEfCoreEntityExtensionMappings.cs
+│   │   │   │── GeoFormsEntityFrameworkCoreModule.cs
+│   │   │── Migrations
+│   │── GeoForms.HttpApi
+│   │── GeoForms.HttpApi.Client
+│   │── GeoForms.HttpApi.Host
+```
+
+
 
 ```
 namespace GeoForms.EntityFrameworkCore;
@@ -61,7 +135,19 @@ public class GeoFormsDbContext :
 **Step 4: Configure the Database Connection String in appsettings.json** 
 - Go to GeoForms.DbMigrator. Open appsettings.json.
 - Add or update the ConnectionStrings section to include the database connection string.
-  ```
+```
+│── GeoForms.DbMigrator
+│   │   │── Dependencies
+│   │   │── appsettings.json
+│   │   │── appsettings.secrets.json
+│   │   │── DbMigratorHostedService.cs
+│   │   │── GeoFormsDbMigratorModule.cs
+│   │   │── Program.cs
+```
+
+
+
+   ```
   "ConnectionStrings": {
     "Default": "Server=localhost\\SQLEXPRESS;Database=GeoForms;Trusted_Connection=True;TrustServerCertificate=True"
   }
@@ -82,6 +168,26 @@ public class GeoFormsDbContext :
 - DTOs are useful for validating input data when creating or updating records.
 - create a folder named PortMasters.
 - create a file named PortMasterdto.cs.
+
+```
+│── GeoForms.Application.Contracts
+│   │── Dependencies
+│   │── Admin
+│   │── CargoGrades
+│   │── Clients
+│   │── ConsumerTypes
+│   │── Core
+│   │── DataDictionaries
+│   │── DataUsers
+│   │── FormLibraries
+│   │── FuelTypes
+│   │── Permissions
+│   │── PortMasters
+│   │   │── PortMasterdto.cs
+│   │── SubmittedForms
+│   │── SupplierMasters
+```
+
 
 ```
 namespace GeoForms.PortMasters
