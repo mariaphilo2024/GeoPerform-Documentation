@@ -32,14 +32,9 @@ public class Program
     {
         // Step 1: Configure Serilog
         Log.Logger = new LoggerConfiguration()
-#if DEBUG
-            .MinimumLevel.Debug() // Debug level for development
-#else
-            .MinimumLevel.Information() // Information level for production
-#endif
-            .MinimumLevel.Override("Microsoft", LogEventLevel.Information) // Suppresses Microsoft logs below Information
+            .MinimumLevel.Debug() // Setting up Minimum Level
             .MinimumLevel.Override("Microsoft.EntityFrameworkCore", LogEventLevel.Warning) // Suppresses EF Core logs below Warning
-            .Enrich.FromLogContext()
+            .Enrich.FromLogContext() // Enables contextual logging
             .WriteTo.Console() // Log to console
             .WriteTo.File("Logs/logs.txt", rollingInterval: RollingInterval.Day, retainedFileCountLimit: 30) // Log to a file
             .CreateLogger();
@@ -222,6 +217,7 @@ app.Run();
 
 Serilog provides different log levels for filtering logs:
 
+- `Log.Verbose("Most Detailed Logs");` - Low-level debugging info (e.g., variable values, execution flow).
 - `Log.Debug("Debug message");` – Detailed information, typically useful for debugging.
 - `Log.Information("Informational message");` – General application flow.
 - `Log.Warning("Warning message");` – Something unexpected happened, but the application continues.
