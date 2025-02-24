@@ -37,8 +37,8 @@ public class Program
 #else
             .MinimumLevel.Information() // Information level for production
 #endif
-            .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
-            .MinimumLevel.Override("Microsoft.EntityFrameworkCore", LogEventLevel.Warning)
+            .MinimumLevel.Override("Microsoft", LogEventLevel.Information) // Suppresses Microsoft logs below Information
+            .MinimumLevel.Override("Microsoft.EntityFrameworkCore", LogEventLevel.Warning) // Suppresses EF Core logs below Warning
             .Enrich.FromLogContext()
             .WriteTo.Console() // Log to console
             .WriteTo.File("Logs/logs.txt", rollingInterval: RollingInterval.Day, retainedFileCountLimit: 30) // Log to a file
