@@ -1,5 +1,9 @@
 # Forms - Angular Application Documentation
 
+**FrontEnd Application Flow Diagram**
+
+![image](https://github.com/user-attachments/assets/ff573edc-546f-43c3-9b6c-09fabd11c7fa)
+
 ## 1. Introduction
 
 ### 1.1 Purpose
@@ -176,4 +180,4 @@ Deployment scripts in `package.json`:
 1. **Multi-language Support:** Implementing i18n for global audiences.
 2. **Form Analytics:** Adding analytics and reporting for form usage and submissions.
 
-![image](https://github.com/user-attachments/assets/ff573edc-546f-43c3-9b6c-09fabd11c7fa)
+
