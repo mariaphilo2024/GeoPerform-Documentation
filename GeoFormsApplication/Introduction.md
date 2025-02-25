@@ -20,7 +20,8 @@ The GeoForms Application is responsible for:
 - **Data Master:** Holds various master data.
 - **User Settings:** Defines permissions and roles.
 
-  ![image](https://github.com/user-attachments/assets/58bb1c8b-710a-4f19-a395-e7ed380753e2)
+ ![image](https://github.com/user-attachments/assets/211548d7-e5ac-470a-a4b1-dfc8c403ef60)
+
 
 
 ## 3. Data Dictionary (Field Creation)
