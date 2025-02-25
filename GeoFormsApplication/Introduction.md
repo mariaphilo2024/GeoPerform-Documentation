@@ -45,6 +45,9 @@ Certain fields, like "Report Time," may have different display names while retai
 - Predefined form templates can be used to quickly create forms for multiple vessels.
 - Instead of designing a new form from scratch, an existing template can be imported and modified.
 
+  ![image](https://github.com/user-attachments/assets/069ebcb1-2fdd-418c-a889-8f54c039eac4)
+
+
 ## 6. Scaling & Cloning Forms
 ### Principal-Specific Form Creation:
 - Within the Form section, there’s a **Principals** sub-tab.
