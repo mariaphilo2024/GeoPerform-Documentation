@@ -19,24 +19,26 @@ GeoForms is a vessel reporting application that enables form creation, submissio
 [2. Introduction](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/Introduction.md) 📝
 **(Overview)**
 
-[3. GeoForms Architecture Diagram](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FormsArchitectureDiagram.md) 🏗️
+[3. Front-End Application Flow Diagram](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FrontEndApplicationFlowDiagram.md) 🗂
 
-[4. Developer Guide](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FormsDeveloperGuide.md) 🚀
+[4. GeoForms Architecture Diagram](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FormsArchitectureDiagram.md) 🏗️
 
-[5. Technology Stack Details](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/TechnologyStackDetails.md) 🖥️
+[5. Developer Guide](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FormsDeveloperGuide.md) 🚀
+
+[6. Technology Stack Details](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/TechnologyStackDetails.md) 🖥️
 **(Dependencies)**
 
-[6. GeoFormsDataFlowDiagram](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FormsDataFlowDiagram.md) 📥
+[7. GeoFormsDataFlowDiagram](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FormsDataFlowDiagram.md) 📥
 
-[7. Business Logic Details](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/BusinessLogicDetails.md) 🔎
+[8. Business Logic Details](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/BusinessLogicDetails.md) 🔎
 
-[8. Routing Details](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FormsRoutingDetails.md) 🌐
+[9. Routing Details](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FormsRoutingDetails.md) 🌐
 
-[9. File Structure and API](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FormsCreateAnApi.md) 📜 (Back-End)
+[10. File Structure and API](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FormsCreateAnApi.md) 📜 (Back-End)
 
-[10. Error Handling and Logging using Serilog](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/ErrorHandlingAndLoggingSerilog.md) 🚨
+[11. Error Handling and Logging using Serilog](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/ErrorHandlingAndLoggingSerilog.md) 🚨
 
-[11. User Guide](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FormsUserGuide.md) 📘
+[12. User Guide](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/GeoFormsApplication/FormsUserGuide.md) 📘
 
 
  
