@@ -59,7 +59,8 @@ The VPS (Vessel Performance System) is a comprehensive application designed to t
 - **Color coding** represents different vessel types.
 - **Map Legends** provide additional details.
 
-  ![image](https://github.com/user-attachments/assets/5fa7b14d-01fd-4989-ab62-ecf77fb003e7)
+  ![image](https://github.com/user-attachments/assets/c7238e94-240f-46e7-b700-96af27865908)
+
 
 
 ## Passage Tracking
@@ -71,18 +72,28 @@ The VPS (Vessel Performance System) is a comprehensive application designed to t
 - Users can track multiple passages simultaneously.
 - Weather overlays are provided for analysis.
 
+ ![image](https://github.com/user-attachments/assets/14fa8155-0ecf-4d2d-a23d-53a6e2ab5e98)
+
+
+
 ## Weather & Position Data
 - Stratum positions (GPS coordinates received via AIS)
+- The Distance API calculates latitude and longitude for hourly positions.
 - DTM processes weather and position data.
 - It receives timestamps and GPS positions from Stratum/AIS data.
 - Provides wind, wave, and current data for each position.
 - DTM calculates estimated weather conditions for hourly intervals.
 - Generates analyzed weather conditions based on vessel movement patterns.
 - Each report's data is split into one-hour intervals for accurate readings.
-- The Distance API calculates latitude and longitude for hourly positions.
+
+
+  ![image](https://github.com/user-attachments/assets/13110749-3cc9-40c0-88aa-cb6b45e7da4e)
+
 
 ## Estimation Logic
 - **Blue dots** = Actual GPS positions (Stratum/AIS data)
+- If a vessel misses position updates, VPS estimates its location.
+- VPS uses previous speed (SOG) and direction (COG) to calculate these missing positions.
 - **Green Hollow circles** = Estimated positions based on voyage calculations
 - Weather data is averaged over one-hour intervals.
 
@@ -93,15 +104,60 @@ The VPS (Vessel Performance System) is a comprehensive application designed to t
 ### Legend & Weather Data Display
 - Wind, wave, and current data are displayed via color-coded overlays.
 - The intensity of currents is shown via numerical values.
-- Analysts primarily use this data for TC performance claims.
 
-## Settings Module
-- User roles & permissions
-- Master data management:
-  - Vessel types, vessel classes, fuel types
-- User-specific settings
-- None/Read/Write/Full access controls
+  ![image](https://github.com/user-attachments/assets/658a1bf1-1c15-45bd-8486-ad6d0ef5fef0)
+
+- Analysts primarily use this data for TC performance claims.
+- Generates Time Charter (TC) reports with weather-adjusted speeds.
+- Weather overlays help analysts understand if bad weather is slowing down a vessel or increasing fuel consumption.
+
+## Available Legends on VPS
+
+### Currents
+- Displayed using arrows indicating direction and speed.
+
+## Waves
+- Shows wave height, direction, and frequency.
+- Indicated by numerical values and directional symbols.
+
+## Wind
+- Displays wind speed and direction using wind barbs (hockey stick symbols).
+
+## Report Legend
+- Categorizes different types of reports received (e.g., Noon Report, Departure Report, Arrival Report).
+
+## Passage Weather Legend
+- Provides weather conditions along the vessel's planned passage.
+- Includes wind, waves, and current data at different timestamps.
+
+## Tropic of Cancer, Equator, and Tropic of Capricorn
+- Displays major latitude lines on the map for navigation reference.
+- Helps in identifying tropical and non-tropical zones.
+
+## ECA (Emission Control Area) Region
+- Highlights areas with strict emission regulations.
+- Used for compliance with environmental policies.
+
+## High-Risk Area
+- Marks zones with piracy threats or other navigational hazards.
+- Helps vessels in route planning and security measures.
+
+## Tropical and Non-Tropical Regions
+- Distinguishes between regions with different weather conditions.
+- Useful for predicting cyclone activity and temperature variations.
+
+## Cursor and Depth Units
+- Provides depth information based on cursor position on the map.
+- Helps in assessing navigational depths for vessel safety.
+
+## Vessel Type
+- Identifies different vessel classifications.
+- Useful for operational and regulatory considerations.
+
+## Vessel Name
+- Displays the vessel’s name for identification on the map.
+- Helps in tracking and monitoring specific vessels.
 
 ## Conclusion
-The VPS system is a powerful vessel tracking and performance management tool. It provides real-time tracking, weather analysis, and voyage insights. Future enhancements will focus on automation, usability, and predictive analytics to further optimize maritime operations.
+VPS tracks ships 24/7 with real-time data, estimates missing positions, analyzes weather impacts, optimizes routes for efficiency and cost savings, and ensures compliance with contractual performance.
 
