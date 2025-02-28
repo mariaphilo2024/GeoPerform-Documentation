@@ -38,7 +38,7 @@ The VPS (Vessel Performance System) is a comprehensive application designed to t
     ![image](https://github.com/user-attachments/assets/21c123d4-7b7c-413d-8df5-83383bd24a33)
 
 
-<br>
+
 ### Vessel Search & Display
 - Users can search vessels beyond the selected vessel group.
 - Selecting a vessel displays:
@@ -53,7 +53,7 @@ The VPS (Vessel Performance System) is a comprehensive application designed to t
 
   ![image](https://github.com/user-attachments/assets/6db1c2f1-9999-4891-805e-71dcd0eb7069)
 
-<br>
+
 ### Visual Indicators on the Map
 - **Circle icon** = Vessel at port
 - **Triangle icon** = Vessel at sea
@@ -64,7 +64,7 @@ The VPS (Vessel Performance System) is a comprehensive application designed to t
   ![image](https://github.com/user-attachments/assets/c7238e94-240f-46e7-b700-96af27865908)
 
 
-<br>
+
 ## Passage Tracking
 - Users can view entire voyage paths.
 - Reports include:
@@ -77,7 +77,7 @@ The VPS (Vessel Performance System) is a comprehensive application designed to t
  ![image](https://github.com/user-attachments/assets/14fa8155-0ecf-4d2d-a23d-53a6e2ab5e98)
 
 
-<br>
+
 ## Weather & Position Data
 - Stratum positions (GPS coordinates received via AIS)
 - The Distance API calculates latitude and longitude for hourly positions.
@@ -91,7 +91,7 @@ The VPS (Vessel Performance System) is a comprehensive application designed to t
 
   ![image](https://github.com/user-attachments/assets/13110749-3cc9-40c0-88aa-cb6b45e7da4e)
 
-<br>
+
 ## Estimation Logic
 - **Blue dots** = Actual GPS positions (Stratum/AIS data)
 - If a vessel misses position updates, VPS estimates its location.
