@@ -11,12 +11,12 @@ The VPS (Vessel Performance System) is a comprehensive application designed to t
 ## Main Modules
 
 **1. Tracking Screen (Landing Page)** <br>
-**2. Passages**
-**3. EMS (Event Management System)**
-**4. Terms**
-**5. Reports**
-**6. Analytics**
-**7. Downloads**
+**2. Passages** <br>
+**3. EMS (Event Management System)** <br>
+**4. Terms** <br>
+**5. Reports** <br>
+**6. Analytics** <br>
+**7. Downloads** <br>
 **8. Settings**
 
    ![image](https://github.com/user-attachments/assets/fb2fd68a-25ea-4ac4-a7ef-951dd290ef86)
