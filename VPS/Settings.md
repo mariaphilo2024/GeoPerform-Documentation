@@ -26,6 +26,7 @@ Standard alerts are currently not in use. The settings page now contains **Data 
 
   ![image](https://github.com/user-attachments/assets/669b8cb0-d779-4ad3-96b3-baeed39d3e2a)
 
+<br>
 
 ### **Role Management**
 - The role management page displays existing roles.
