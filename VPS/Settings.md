@@ -103,9 +103,9 @@ Permissions are categorized as:
   ![image](https://github.com/user-attachments/assets/75fbb4c7-ac07-4b3c-bb17-c1e21355befc)
 
 - Includes **Custom KPIs** such as:
-  - Emission KPIs
-  - Fuel KPI
-  - Position KPI
+  - Emission KPIs ( to track CO₂ and SO₂)
+  - Fuel KPI ( monitor fuel consumption )
+  - Position KPI (analyze route efficiency)
   - Sea Cargo Charter Variables
   - Poseidon Constants
   - AER Constants
