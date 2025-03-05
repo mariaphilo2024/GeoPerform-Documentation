@@ -111,8 +111,6 @@ Permissions are categorized as:
   - AER Constants
 - Primarily used in the **EMS module** for calculations.
 
-  ![image](https://github.com/user-attachments/assets/392c48ee-d587-4dd7-9c2e-44c06d3702ee)
-
 
 ### **Port Master**
 - Contains a database of **8,000–9,000 ports**.
