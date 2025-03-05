@@ -12,7 +12,7 @@ Standard alerts are currently not in use. The settings page now contains **Data 
 
 
 ---
-
+<br>
 ## **2. User Settings**
 ### **User Management**
 - The user page allows for creating and managing users.
