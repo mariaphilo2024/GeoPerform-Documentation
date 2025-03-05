@@ -163,7 +163,6 @@ Permissions are categorized as:
 
 ## **6. Future Enhancements**
 - **Incorporating Vessel Type selection in UI**.
-- **Automating fuel category mapping within UI**.
 - **Reactivating alert notifications**.
 - **Expanding EMS & Analytics integration**.
 - **Enhancing role-based access for report management**.
