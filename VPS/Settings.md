@@ -63,7 +63,8 @@ Permissions are categorized as:
 - Users can create vessel groups by selecting vessels from a dropdown list.
 - Admin have access to all vessels
 
-  ![image](https://github.com/user-attachments/assets/ace7f476-2c73-4553-81c3-9a3b0dc3e7e3)
+ ![image](https://github.com/user-attachments/assets/23ab7d9c-559f-4bc0-8fb9-4d13f5dca6cd)
+
 
 
 ### **Consumption Categories (Consumer Types)**
