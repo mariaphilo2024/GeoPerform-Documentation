@@ -8,6 +8,9 @@ The VPS settings page has been restructured and is now categorized into three ma
 
 Standard alerts are currently not in use. The settings page now contains **Data Master** and **User** configurations. The current version is displayed prominently on the settings page.
 
+![image](https://github.com/user-attachments/assets/9d39d1cd-40e5-41e4-8190-cf91aff63c6b)
+
+
 ---
 
 ## **2. User Settings**
@@ -20,11 +23,17 @@ Standard alerts are currently not in use. The settings page now contains **Data 
   - Role
 - Users can be activated or deactivated.
 
+  ![image](https://github.com/user-attachments/assets/669b8cb0-d779-4ad3-96b3-baeed39d3e2a)
+
+
 ### **Role Management**
 - The role management page displays existing roles.
 - New roles can be created and assigned specific permissions.
-- Users with specific roles can access selected reports.
+- Users with specific roles can access **selected reports.**
 - Each **sub-module** has permission definitions.
+
+  ![image](https://github.com/user-attachments/assets/779994b8-c432-4201-aedc-440b46870ecc)
+
 
 ### **Permissions Structure**
 Permissions are categorized as:
@@ -39,7 +48,10 @@ Permissions are categorized as:
 ### **Vessel Management**
 #### **Vessel Master**
 - Displays vessel details.
-- Vessel categories include:
+
+  ![image](https://github.com/user-attachments/assets/0ae87664-6485-47a5-a8f6-37399526634b)
+
+- **Vessel categories include:**
   - **Vessel Type** (Backend-defined, UI integration planned)
   - **Vessel Size** (User-defined in UI)
   - **Vessel Class** (User-defined in UI)
@@ -49,6 +61,9 @@ Permissions are categorized as:
 - Allows categorization of vessels manually via dropdown.
 - Users can create vessel groups by selecting vessels from a dropdown list.
 - Admin have access to all vessels
+
+  ![image](https://github.com/user-attachments/assets/ace7f476-2c73-4553-81c3-9a3b0dc3e7e3)
+
 
 ### **Consumption Categories (Consumer Types)**
 - Defines fuel consumption categories for passages.
@@ -64,6 +79,9 @@ Permissions are categorized as:
 - Fuel type additions do not automatically integrate into system logic and require backend modifications.
 - A proposed enhancement is to allow **FO(Fuel Oil) & GO(Gas Oil) category definition from the UI**.
 
+  ![image](https://github.com/user-attachments/assets/a9282576-6dd4-45b1-9e48-459f992e3180)
+
+
 ### **Lube Oil Master**
 - Recently introduced with five predefined categories.
 - Only applicable to specific vessels.
@@ -72,20 +90,34 @@ Permissions are categorized as:
   - Activate/deactivate categories
   - Add new oil types
 
+    ![image](https://github.com/user-attachments/assets/53cb7a6d-930f-4ded-9416-717309fcde32)
+
+
 ### **Event Master**
 - Defines vessel-reported events.
+
+  ![image](https://github.com/user-attachments/assets/75fbb4c7-ac07-4b3c-bb17-c1e21355befc)
+
 - Includes **Custom KPIs** such as:
   - Emission KPIs
+  - Fuel KPI
+  - Position KPI
   - Sea Cargo Charter Variables
   - Poseidon Constants
   - AER Constants
 - Primarily used in the **EMS module** for calculations.
+
+  ![image](https://github.com/user-attachments/assets/392c48ee-d587-4dd7-9c2e-44c06d3702ee)
+
 
 ### **Port Master**
 - Contains a database of **8,000–9,000 ports**.
 - Individual ports can be added via the application.
 - Bulk additions require backend updates.
 - Ports impact **EUMRV logic, passage screen, arrival/departure records**.
+
+  ![image](https://github.com/user-attachments/assets/4aac00c1-0b63-4f66-b7d8-c4214c97ad38)
+
 
 ---
 
