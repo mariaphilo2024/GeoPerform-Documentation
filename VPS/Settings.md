@@ -6,13 +6,14 @@ The VPS settings page has been restructured and is now categorized into three ma
 - **User Settings**
 - **Alert Settings**
 
-Standard alerts are currently not in use. The settings page now contains **Data Master** and **User** configurations. The current version is displayed prominently on the settings page.
+Standard alerts are currently not in use. The settings page now contains **Data Master** and **User** configurations. The current version is displayed prominently on the settings page.<br>
 
 ![image](https://github.com/user-attachments/assets/9d39d1cd-40e5-41e4-8190-cf91aff63c6b)
 
 
 ---
 
+<br>
 
 ## **2. User Settings**
 ### **User Management**
@@ -36,6 +37,7 @@ Standard alerts are currently not in use. The settings page now contains **Data 
 
   ![image](https://github.com/user-attachments/assets/779994b8-c432-4201-aedc-440b46870ecc)
 
+<br>
 
 ### **Permissions Structure**
 Permissions are categorized as:
@@ -45,6 +47,7 @@ Permissions are categorized as:
 - **None:** No access to the specified feature.
 
 ---
+<br>
 
 ## **3. Data Master**
 ### **Vessel Management**
@@ -53,11 +56,14 @@ Permissions are categorized as:
 
   ![image](https://github.com/user-attachments/assets/0ae87664-6485-47a5-a8f6-37399526634b)
 
+<br>
+
 - **Vessel categories include:**
   - **Vessel Type** (Backend-defined, UI integration planned)
   - **Vessel Size** (User-defined in UI)
   - **Vessel Class** (User-defined in UI)
 - Vessel types influence calculations in modules like **AER-CII Rating**.
+<br>
 
 #### **Vessel Groups**
 - Allows categorization of vessels manually via dropdown.
@@ -67,6 +73,7 @@ Permissions are categorized as:
  ![image](https://github.com/user-attachments/assets/23ab7d9c-559f-4bc0-8fb9-4d13f5dca6cd)
 
 
+<br>
 
 ### **Consumption Categories (Consumer Types)**
 - Defines fuel consumption categories for passages.
@@ -75,6 +82,7 @@ Permissions are categorized as:
 
   ![image](https://github.com/user-attachments/assets/dca28f66-6edd-49d9-86ec-2ba520f6bc63)
 
+<br>
 
 ### **Fuel Types and Dependencies**
 - Adding a new fuel type requires updates in:
@@ -87,6 +95,7 @@ Permissions are categorized as:
 
   ![image](https://github.com/user-attachments/assets/a9282576-6dd4-45b1-9e48-459f992e3180)
 
+<br>
 
 ### **Lube Oil Master**
 - Recently introduced with five predefined categories.
@@ -98,6 +107,7 @@ Permissions are categorized as:
 
     ![image](https://github.com/user-attachments/assets/53cb7a6d-930f-4ded-9416-717309fcde32)
 
+<br>
 
 ### **Event Master**
 - Defines vessel-reported events.
@@ -113,6 +123,7 @@ Permissions are categorized as:
   - AER Constants
 - Primarily used in the **EMS module** for calculations.
 
+<br>
 
 ### **Port Master**
 - Contains a database of **8,000–9,000 ports**.
@@ -124,6 +135,7 @@ Permissions are categorized as:
 
 
 ---
+<br>
 
 ## **4. EMS and Analytics Modules**
 ### **EMS Module**
@@ -132,12 +144,14 @@ Permissions are categorized as:
   - **AER**
   - **Annual Vessel Reports**
 - Some features require modification.
+<br>
 
 ### **Analytics Module**
 - Contains **Hull Management Calculators**.
 - Allows users to input values and calculate **payback periods**.
 
 ---
+<br>
 
 ## **5. Additional Features**
 - **Password Change & Logout Functionality** available in the top navigation.
@@ -145,6 +159,7 @@ Permissions are categorized as:
 - **Terms Module** is dependent on reports (e.g., Time Charter Report, Pool Performance Report).
 
 ---
+<br>
 
 ## **6. Future Enhancements**
 - **Incorporating Vessel Type selection in UI**.
@@ -154,6 +169,7 @@ Permissions are categorized as:
 - **Enhancing role-based access for report management**.
 
 ---
+<br>
 
 ## **Conclusion**
 - The settings page has been **restructured for efficiency**.
