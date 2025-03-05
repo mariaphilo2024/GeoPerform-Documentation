@@ -1,6 +1,6 @@
 **VPS Settings Document**
 
-## **1. Overview**
+### **1. Overview**
 The VPS settings page has been restructured and is now categorized into three main sections:
 - **Master Pages**
 - **User Settings**
@@ -69,6 +69,9 @@ Permissions are categorized as:
 - Defines fuel consumption categories for passages.
 - Includes both predefined and custom categories.
 - **New Fuel Types require backend logic updates** in multiple reports and tracking screens.
+
+  ![image](https://github.com/user-attachments/assets/dca28f66-6edd-49d9-86ec-2ba520f6bc63)
+
 
 ### **Fuel Types and Dependencies**
 - Adding a new fuel type requires updates in:
