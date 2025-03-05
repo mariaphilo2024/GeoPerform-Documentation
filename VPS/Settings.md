@@ -8,7 +8,7 @@ The VPS settings page has been restructured and is now categorized into three ma
 
 Standard alerts are currently not in use. The settings page now contains **Data Master** and **User** configurations. The current version is displayed prominently on the settings page.
 
-![image](https://github.com/user-attachments/assets/9d39d1cd-40e5-41e4-8190-cf91aff63c6b){ width=200px }
+![image](https://github.com/user-attachments/assets/9d39d1cd-40e5-41e4-8190-cf91aff63c6b)
 
 
 ---
