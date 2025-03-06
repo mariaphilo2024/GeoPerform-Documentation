@@ -5,6 +5,10 @@ Currently, there are two mechanisms for generating reports in VPS:
 1. **Direct Download:** Once the user clicks "Generate," a loader appears, and the report gets directly downloaded in the browser.
 2. **Queued Download:** When "Generate" is clicked, the report request is placed in a queue. The report moves to the download space, where its status updates once it is ready. Users can download it anytime and refer to previous reports. If an error occurs, it is displayed in the remarks section.
 
+   ![image](https://github.com/user-attachments/assets/a3d49d3a-76ce-4258-a4b9-4c94e2831e88)
+
+<br>
+
 ### **Available Reports**
 Reports can be downloaded in multiple formats (PDF/Excel). Different types of reports include:
 - **Bunker Intake Report**
