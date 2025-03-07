@@ -102,8 +102,8 @@ The main sections of the application are available in the left-side navigation m
 ✅ Contact **📞 Support** if needed.
 
 ## **12. 📞 Contact Support**
-📧 **Email**: support@geoforms.com  
-📞 **Helpline**: +123-456-7890
+📧 **Email**:  
+📞 **Helpline**: 
 
 ## **13. 🎯 Conclusion**
 This user guide provides step-by-step instructions on using the **GeoForms UI** for **form management, submission, approval, and reporting**. For further assistance, contact **support** or refer to the **help section** within the application.
