@@ -6,6 +6,9 @@
 
 The diagram represents the architecture of the **Vessel Performance System (VPS)**, which integrates various data sources to generate performance insights and provide actionable feedback to the user interface and analytics engine.
 
+
+<br>
+
 <br>
 
 ![image](https://github.com/user-attachments/assets/4c5cb985-95c3-4471-9222-6e5d5da2415f)
