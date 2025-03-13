@@ -2,7 +2,7 @@
 
 
 
-# Vessel Performance System (VPS) Architecture Overview
+# Vessel Performance System (VPS) Architecture 
 
 The diagram represents the architecture of the **Vessel Performance System (VPS)**, which integrates various data sources to generate performance insights and provide actionable feedback to the user interface and analytics engine.
 
