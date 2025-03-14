@@ -177,4 +177,4 @@ Ensure that the `GeoForms.HttpApi.Host` project is the startup project and run i
 **Solution:** Run `npm install` and ensure correct version of Angular CLI is installed.
 
 ## Conclusion
-By following these steps, you should have a fully functional local development environment for GeoForms. Happy coding!
+By following these steps, you should have a fully functional local development environment for GeoForms. 
