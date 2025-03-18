@@ -4,6 +4,12 @@ The Vessel Performance System (VPS) is a comprehensive platform designed to trac
 This guide provides an in-depth overview of the main modules and their submodules, along with detailed instructions on how to use them effectively.
 
 ---
+## ** 🔑 Logging into VPS**
+1. Open the **VPS Application** in your browser.
+2. Enter your **Username** and **Password**.
+3. Click **🔓 Login**.
+4. If enabled, use **Single Sign-On (SSO)** for authentication.
+5. After logging in, you will land on the **🏠 Dashboard**.
 
 ## 📌 Key Modules in VPS
 VPS consists of the following main modules:
