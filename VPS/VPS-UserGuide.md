@@ -128,6 +128,28 @@ The EMS Module helps manage vessel emissions, track compliance, and generate rep
 | EMS Analytics | Insights and analytics for emissions data. |
 | Data Verification | Validates emissions data. |
 
+
+### **1. Select Reporting Year**
+- Click on the **Reporting Year** dropdown.
+
+
+### **2. Filter by Vessel Status**
+- Select the status option:
+  - **All** – Displays all vessels.  
+  - **Active** – Displays only vessels with active status.  
+  - **Inactive** – Displays only vessels with inactive status.  
+
+
+### **3. Select Vessel **
+- Click the **Vessel** dropdown.  
+- Choose a specific vessel from the list (e.g., `ACACIA`).  
+
+
+### **4. Load Data**
+- Click the **Load** button.  
+- The system will display the filtered vessel data.  
+
+
 ![image](https://github.com/user-attachments/assets/3e50b537-8765-4cfb-879d-50482b0dfd75)
 
 
@@ -192,24 +214,16 @@ The Analytics Module provides deep insights into vessel performance using KPIs.
 ---
 
 ## 🚀 6. Pulse Module
-The Pulse Module provides real-time performance monitoring and KPI tracking.
+The Pulse Module provides real-time insights into vessel performance, including speed, 
+fuel consumption, and efficiency. It helps monitor live data and detect anomalies or trends 
+to optimize vessel operations.
+
 ## 1. Accessing the Pulse Module
 1. Open the **VPS platform**.  
 2. From the left sidebar, select **Pulse** to expand the module.  
 3. Choose **Hull & Propeller KPI** from the list.
-4. The dashboard provides a detailed view of hull and propeller health through graphical and statistical data.
-   ### **Key Metrics**
-| Metric | Description |
-|--------|-------------|
-| **% Speed Gain** | Percentage of speed gained after maintenance. |
-| **% Cons Drop** | Percentage drop in fuel consumption post-maintenance. |
-| **Current Speed Loss %** | Current percentage of speed loss due to hull or propeller condition. |
-### 🛠️ **Dry Dock & Maintenance Effect**
-- **Dry Dock Button** – Logs major maintenance events (e.g., hull cleaning).  
-- **Maintenance Effect Button** – Calculates the impact of maintenance on speed and fuel consumption.  
+4. The dashboard provides a detailed view of hull and propeller health through graphical and statistical data. 
 
-✅ **After inputting maintenance dates:**  
-- Speed gain and consumption drop values are updated based on post-maintenance data.
 
   ![image](https://github.com/user-attachments/assets/9bd487e2-c6e1-4916-bcb4-df4013d2bd46)
 
@@ -263,7 +277,10 @@ The table includes the following columns:
 ## ✅ Best Practices  
 - Regularly check the **Status** and **Remarks** columns for updates.  
 - Use the **Report Type** and **Scheduled Time** columns to identify reports quickly.  
-- For recurring issues, contact system support with the **Report ID** and **error details**.  
+- For recurring issues, contact system support with the **Report ID** and **error details**.
+
+  ![image](https://github.com/user-attachments/assets/c04c62fc-285c-480a-a5b7-143fbe9f1010)
+
 
 ---
 
@@ -274,7 +291,29 @@ Tracks emissions data and ensures compliance with global regulations.
 ---
 
 ## 🚢 8. FuelEU Maritime
-Handles data related to FuelEU regulations.
+
+The FuelEU Maritime module consists of two key submodules:
+
+### 1. **Penalty Calculator**  
+Estimates the penalty cost if the vessel exceeds the compliance target.  
+
+**Key Features:**  
+- Calculates **GHG Intensity** based on fuel consumption and emission factors.  
+- Provides **year-wise compliance targets** and balances.  
+- Allows adjustment of **fuel type**, **consumption**, and other cost factors to optimize compliance.
+
+  ![image](https://github.com/user-attachments/assets/8c03fcd3-bda6-40ad-a81c-091cf9cb9cd1)
+
+### 2. **FuelEU**  
+- **Tracks vessel compliance** with FuelEU regulations.  
+- **Calculates penalties** if compliance targets are not met.  
+- **Provides penalty and surplus values** in **EURO** or **USD**.  
+- **Helps in financial planning** and decision-making.  
+
+
+
+![image](https://github.com/user-attachments/assets/28aa80da-b799-46a7-9454-9b37ac434844)
+
 
 ---
 
