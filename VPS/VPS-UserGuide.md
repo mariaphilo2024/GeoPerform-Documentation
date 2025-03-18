@@ -12,7 +12,7 @@ VPS consists of the following main modules:
 |-----------|-------------|
 | **Tracking Screen** | Displays real-time vessel tracking and position data. |
 | **Passages** | Logs and analyzes vessel passages for performance insights. |
-| **EMS (Engine Monitoring System)** | Monitors engine performance and fuel consumption. |
+| **EMS (Emission Management System)** | Tracks and manages vessel emissions to ensure regulatory compliance. |
 | **Terms** | Manages terms and conditions for reporting and data sharing. |
 | **Report** | Generates and schedules performance, compliance, and summary reports. |
 | **Analytics** | Provides deep insights into vessel performance using various KPIs. |
