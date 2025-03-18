@@ -51,6 +51,8 @@ You can filter the vessel list based on the following options:
 - **Show on Map** – Displays the vessel's route on the map.  
 - **Clear** – Resets all filters and selections.
 
+  <br>
+
   ![image](https://github.com/user-attachments/assets/a8fbcf17-6a32-4d56-b108-d6a8eef6b232)
 
 
@@ -106,6 +108,8 @@ The Passage Module is divided into the following sections:
    - Missing fields  
    - Incorrect data type  
    - Invalid time zones
+ 
+      <br>
 
      ![image](https://github.com/user-attachments/assets/3a76828b-a38c-408c-bc82-8e2b27bb1298)
 
@@ -147,7 +151,9 @@ The EMS Module helps manage vessel emissions, track compliance, and generate rep
 
 ### **4. Load Data**
 - Click the **Load** button.  
-- The system will display the filtered vessel data.  
+- The system will display the filtered vessel data.
+
+   <br>
 
 
 ![image](https://github.com/user-attachments/assets/3e50b537-8765-4cfb-879d-50482b0dfd75)
@@ -192,6 +198,8 @@ The Terms Module manages chartering terms for vessels, including performance exp
 - **➕ AUX (Auxiliary Engine)** – Define the category and fuel type for the auxiliary engine.  
 - **➕ OTHERS** – Define additional fuel categories if applicable.
 
+   <br>
+
   ![image](https://github.com/user-attachments/assets/233af498-c4f1-458a-aae3-78626ae9c010)
 
 
@@ -208,6 +216,8 @@ The Analytics Module provides deep insights into vessel performance using KPIs.
 - **Bunker Dashboard**  
 - **Speed & Consumption**
 
+   <br>
+
   ![image](https://github.com/user-attachments/assets/5cc9d940-e2ef-4f4c-8cc0-142d47a6aecf)
 
 
@@ -222,7 +232,9 @@ to optimize vessel operations.
 1. Open the **VPS platform**.  
 2. From the left sidebar, select **Pulse** to expand the module.  
 3. Choose **Hull & Propeller KPI** from the list.
-4. The dashboard provides a detailed view of hull and propeller health through graphical and statistical data. 
+4. The dashboard provides a detailed view of hull and propeller health through graphical and statistical data.
+
+    <br>
 
 
   ![image](https://github.com/user-attachments/assets/9bd487e2-c6e1-4916-bcb4-df4013d2bd46)
@@ -279,6 +291,8 @@ The table includes the following columns:
 - Use the **Report Type** and **Scheduled Time** columns to identify reports quickly.  
 - For recurring issues, contact system support with the **Report ID** and **error details**.
 
+   <br>
+
   ![image](https://github.com/user-attachments/assets/c04c62fc-285c-480a-a5b7-143fbe9f1010)
 
 
@@ -302,13 +316,19 @@ Estimates the penalty cost if the vessel exceeds the compliance target.
 - Provides **year-wise compliance targets** and balances.  
 - Allows adjustment of **fuel type**, **consumption**, and other cost factors to optimize compliance.
 
+   <br>
+
   ![image](https://github.com/user-attachments/assets/8c03fcd3-bda6-40ad-a81c-091cf9cb9cd1)
+
+   <br>
 
 ### 2. **FuelEU**  
 - **Tracks vessel compliance** with FuelEU regulations.  
 - **Calculates penalties** if compliance targets are not met.  
 - **Provides penalty and surplus values** in **EURO** or **USD**.  
-- **Helps in financial planning** and decision-making.  
+- **Helps in financial planning** and decision-making.
+
+   <br>
 
 
 
