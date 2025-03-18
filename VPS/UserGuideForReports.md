@@ -7,7 +7,12 @@ The **Reports Module** in the **Vessel Performance System (VPS)** allows you to 
 ## **1. Accessing the Reports Module**  
 1. Open the VPS platform.  
 2. From the left sidebar, click on **Report**.  
-3. The **Reports** screen will open, showing the available report options.  
+3. The **Reports** screen will open, showing the available report options.
+
+   <br>
+
+   ![image](https://github.com/user-attachments/assets/4bb4a6be-fb97-4789-a981-09970360c46b)
+
 
 ---
 
