@@ -64,3 +64,5 @@ GeoForms is a vessel reporting application that enables form creation, submissio
 [10. Business Logic Details](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/VPS-BusinessLogic.md) 🔎
 
 [11. VPS Backend Dependencies](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/VPSBackendDependencies.md) 🖥️
+
+[12. VPS Frontend Dependencies](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/VPSFrontendDependencies.md) 🖥️
