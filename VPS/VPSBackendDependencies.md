@@ -3,7 +3,7 @@
 ## **.NET Version**
 - **.NET Version:** `9.0.100`
 
----
+
 
 ## **Project: Data.Solution**  
 **Target Framework:** `netcoreapp3.1`
@@ -14,7 +14,7 @@
 | Microsoft.EntityFrameworkCore.SqlServer | 2.2.0 |
 | Newtonsoft.Json | 11.0.2 |
 
----
+
 
 
 ## **Project: Systems**  
