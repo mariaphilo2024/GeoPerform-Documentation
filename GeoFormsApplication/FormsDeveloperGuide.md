@@ -79,10 +79,6 @@ A **Swagger UI** will open in your browser.
 
 Use `Ctrl + F5` in Visual Studio for a faster execution without debugging.
 
-### Authorization for Swagger UI
-To test authorized APIs, log in manually at `https://localhost:**/Account/Login` using:
-- **Username:** `admin`
-- **Password:** `1q2w3E*`
 
 ## UI Setup - Angular (Web)
 
