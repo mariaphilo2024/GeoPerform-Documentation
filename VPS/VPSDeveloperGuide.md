@@ -86,11 +86,12 @@
 1. Open `gp-website.code-workspace` in VS Code.  
 2. Install dependencies:
    
-```
+
+
 npm install --force
 ### **Start the Development Server**
 
-```
+
 
 npm start
 - Open [http://localhost:4200](http://localhost:4200) to view the app.  
