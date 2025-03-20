@@ -44,6 +44,7 @@
     "clientSecret": 
   }
 }
+
 ```
 
 ## **Run the Application**
