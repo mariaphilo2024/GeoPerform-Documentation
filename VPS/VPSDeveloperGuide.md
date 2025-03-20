@@ -1,4 +1,4 @@
-# **Setting Up the Local Development Environment for VPS**
+# **Setting Up the Local Development Environment for VPS**🚀
 
 ## **Prerequisites**
 
