@@ -47,22 +47,24 @@ GeoForms is a vessel reporting application that enables form creation, submissio
 
 [2. Vessel Performence System Overview](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/TrackingScreen.md) 📍
 
-[3. VPS User Guide](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/VPS-UserGuide.md) 📘
+[3. VPS Developer Guide](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/VPSDeveloperGuide.md) 🚀
 
-[4. VPS Settings Demo](https://drive.google.com/file/d/19xm5nEo3N0Kp9NaM3RzZj65ARK2HbcYv/view?usp=sharing) 🎥
+[4. VPS User Guide](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/VPS-UserGuide.md) 📘
 
-[5. VPS Settings Overview](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/Settings.md) ⚙️ 
+[5. VPS Settings Demo](https://drive.google.com/file/d/19xm5nEo3N0Kp9NaM3RzZj65ARK2HbcYv/view?usp=sharing) 🎥
 
-[6. VPS Reports Demo](https://drive.google.com/file/d/1RrMi4ipAjniAhyK02O96IkYwGsiSAi7h/view) 🎥
+[6. VPS Settings Overview](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/Settings.md) ⚙️ 
 
-[7. VPS Reports Overview](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/Reports.md) 📊
+[7. VPS Reports Demo](https://drive.google.com/file/d/1RrMi4ipAjniAhyK02O96IkYwGsiSAi7h/view) 🎥
 
-[8. User Guide For Reports](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/UserGuideForReports.md) 📘 
+[8. VPS Reports Overview](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/Reports.md) 📊
 
-[9. VPS Architecture Diagram](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/VPS-Architecture.md) 🚢
+[9. User Guide For Reports](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/UserGuideForReports.md) 📘 
 
-[10. Business Logic Details](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/VPS-BusinessLogic.md) 🔎
+[10. VPS Architecture Diagram](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/VPS-Architecture.md) 🚢
 
-[11. VPS Backend Dependencies](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/VPSBackendDependencies.md) 🖥️
+[11. Business Logic Details](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/VPS-BusinessLogic.md) 🔎
 
-[12. VPS Frontend Dependencies](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/VPSFrontendDependencies.md) 🖥️
+[12. VPS Backend Dependencies](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/VPSBackendDependencies.md) 🖥️
+
+[13. VPS Frontend Dependencies](https://github.com/mariaphilo2024/GeoPerform-Documentation/blob/main/VPS/VPSFrontendDependencies.md) 🖥️
