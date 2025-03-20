@@ -44,6 +44,7 @@
     "clientSecret": 
   }
 }
+```
 
 ## **Run the Application**
 1. Run the application using:  
