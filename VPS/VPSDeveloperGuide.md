@@ -33,7 +33,7 @@
 ## **Configure Environment**
 ### **For QA**
 1. In Solution Explorer, open **appsettings.json** and enable:
-```json
+
 {
   "AllowedHosts": "*",
   "AzureVaultCredentials": {
