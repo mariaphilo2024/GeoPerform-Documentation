@@ -84,11 +84,14 @@
 
 ### **Run the Angular App**
 1. Open `gp-website.code-workspace` in VS Code.  
-2. Install dependencies:  
-```bash
+2. Install dependencies:
+   
+```
 npm install --force
 ### **Start the Development Server**
-```bash
+
+```
+
 npm start
 - Open [http://localhost:4200](http://localhost:4200) to view the app.  
 - Check out the Angular CLI Documentation.  
