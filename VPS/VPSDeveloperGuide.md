@@ -95,7 +95,7 @@ npm install --force
 
 npm start
 - Open [http://localhost:4200](http://localhost:4200) to view the app.  
-- Check out the Angular CLI Documentation.  
+- check out the [Angular CLI Documentation](https://angular.io/cli). 
 
 ---
 
