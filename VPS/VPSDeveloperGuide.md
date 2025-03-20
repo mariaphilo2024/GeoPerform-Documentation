@@ -33,7 +33,9 @@
 ## **Configure Environment**
 ### **For QA**
 1. In Solution Explorer, open **appsettings.json** and enable:
+   
 ```
+
 {
   "AllowedHosts": "*",
   "AzureVaultCredentials": {
@@ -42,7 +44,7 @@
     "clientSecret": 
   }
 }
----
+
 ## **Run the Application**
 1. Run the application using:  
    **Ctrl + F5**  
