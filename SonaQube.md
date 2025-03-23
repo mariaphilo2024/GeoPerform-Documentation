@@ -209,15 +209,48 @@ sudo apt install docker.io -y
 
 - Pull the latest PostgreSQL image:
 
-   ```
+ ```
    
 docker pull postgres:latest
 
-   ```
+ ```
 
+ ## Step 3: Run PostgreSQL and SonarQube Containers
+
+ 1. Start PostgreSQL Container:
+    - Run the following command to create a PostgreSQL container with a username and password:
+
+    ```
     
+      docker run -d --name postgres -e
+      POSTGRES_USER=sonar -e
+      POSTGRES_PASSWORD=your_password -e
+      POSTGRES_DB=sonar_db postgres:latest
 
-    ## Step 3: Run PostgreSQL and SonarQube Containers
+    ```
+
+    - Replace your_password with a secure password.
+
+     ### 2. Start SonarQube Container:
+         - Run the SonarQube container and link it to the PostgreSQL container:
+
+         ```
+         
+           docker run -d --name sonarqube -p 9000:9000
+         --network sonarnet --env
+         SONARQUBE_JDBC_URL=jdbc:postgresql://postgres
+         :5432/sonar_db --env
+         SONARQUBE_JDBC_USERNAME=sonar --env
+         SONARQUBE_JDBC_PASSWORD=your_password
+         sonarqube:latest
+
+          ```
+
+     ## Step 4: Access SonarQube Web Interface
+      ###   1. Open SonarQube:
+            - In a web browser, go to http://<vm-ip>:9000 (replace <vm-ip> with your actual VM IP address).
+     ###    2. Log In:
+            - Use the default username and password: admin / admin.
   
 
 
