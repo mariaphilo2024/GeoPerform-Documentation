@@ -170,49 +170,33 @@ View the SonarQube report for the project.
 **Update the package list:**
 
  ```
-
 sudo apt update
-
  ```
-- Install Docker:
-  
+- Install Docker:  
  ```
 sudo apt install docker.io -y
-
  ```
 ### Start and Enable Docker Service:
 - Start Docker immediately:
 
  ```
-
   sudo systemctl start docker
-
  ```
-
 - Enable Docker to start on boot:
 
  ```
- 
   sudo systemctl enable docker
-
 ```
-
 ### 1. Pull SonarQube and PostgreSQL Images:
 
 - Pull the latest SonarQube image:
 
  ```
-
   docker pull sonarqube:latest
-
  ```
-
 - Pull the latest PostgreSQL image:
-
  ```
-   
 docker pull postgres:latest
-
  ```
 
  ## Step 3: Run PostgreSQL and SonarQube Containers
@@ -221,29 +205,24 @@ docker pull postgres:latest
     - Run the following command to create a PostgreSQL container with a username and password:
 
     ```
-    
       docker run -d --name postgres -e
       POSTGRES_USER=sonar -e
       POSTGRES_PASSWORD=your_password -e
       POSTGRES_DB=sonar_db postgres:latest
-
     ```
-
     - Replace your_password with a secure password.
 
      ### 2. Start SonarQube Container:
          - Run the SonarQube container and link it to the PostgreSQL container:
 
-     ```
-         
-           docker run -d --name sonarqube -p 9000:9000
+     ```  
+         docker run -d --name sonarqube -p 9000:9000
          --network sonarnet --env
          SONARQUBE_JDBC_URL=jdbc:postgresql://postgres
          :5432/sonar_db --env
          SONARQUBE_JDBC_USERNAME=sonar --env
          SONARQUBE_JDBC_PASSWORD=your_password
          sonarqube:latest
-
       ```
 
      ## Step 4: Access SonarQube Web Interface
