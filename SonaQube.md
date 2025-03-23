@@ -152,6 +152,30 @@ View the SonarQube report for the project.
 ## Step 1: Install PuTTY and Connect to Ubuntu VM Using PPK Key
 1. Download and Install **PuTTY**
    - Visit **[PuTTY’s official download page](https://www.putty.org/)** and install the application.
+2. Connect to the VM:
+   
+ -  Open PuTTY.
+
+- Enter your VM’s IP address in the “Host Name (or IP address)” field.
+
+- In the left-hand menu, go to "Connection" > "SSH" > "Auth."
+
+- Under "Auth," click "Browse" and select your . ppk key file.
+
+- Click "Open" to start an SSH session with the VM.
+
+ ## Step 2: Install Docker on the VM and Pull Required Images
+ - Install Docker:
+
+**Update the package list:**
+
+ ```bash
+
+sudo apt update
+
+- Install Docker:
+ ```bash
+sudo apt install docker.io -y
 
 
 
