@@ -180,6 +180,44 @@ sudo apt update
 sudo apt install docker.io -y
 
  ```
+### Start and Enable Docker Service:
+- Start Docker immediately:
 
+ ```
+
+  sudo systemctl start docker
+
+ ```
+
+- Enable Docker to start on boot:
+
+ ```
+ 
+  sudo systemctl enable docker
+
+```
+
+### 1. Pull SonarQube and PostgreSQL Images:
+
+- Pull the latest SonarQube image:
+
+ ```
+
+  docker pull sonarqube:latest
+
+ ```
+
+- Pull the latest PostgreSQL image:
+
+   ```
+   
+docker pull postgres:latest
+
+   ```
+
+    
+
+    ## Step 3: Run PostgreSQL and SonarQube Containers
+  
 
 
