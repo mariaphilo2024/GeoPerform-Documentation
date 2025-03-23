@@ -143,3 +143,14 @@ Go to localhost:9000 in the browser.
 
 View the SonarQube report for the project.
 
+# SonarQube Setup on Ubuntu VM using Docker
+
+This document provides a step-by-step guide to setting up **SonarQube** on an **Ubuntu Virtual Machine (VM)** using **Docker**.
+
+## Step 1: Install PuTTY and Connect to Ubuntu VM Using PPK Key
+1. Download and Install PuTTY
+   o Visit PuTTY’s official download page and install the application.
+
+
+
+
