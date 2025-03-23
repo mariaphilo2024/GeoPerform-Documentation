@@ -87,31 +87,51 @@ SonarQube is a **quality management tool** developed by **SonarSource**.
    - Login using:  
      - **Username:** `admin`  
      - **Password:** `admin`  
-   - Update with a new password.  
+   - Update with a new password.
+  
+     ![image](https://github.com/user-attachments/assets/906e2308-5b78-4207-9a5b-a67e497ec7ca)
+
+     - Select Manually
+
 
 ---
 
 ### **Step 3: Create a New Project**
 1. Go to **Projects** → **Create Project**.  
 2. Enter **Project Display Name** → **Project Key** is generated automatically.  
-3. Select **SetUp** → Choose **Local**.  
+3. Select **SetUp** → Choose **Local**.
+
+   ![image](https://github.com/user-attachments/assets/dc751e8f-8818-4934-bed8-4e098b867db7)
+
 
 ---
 
-### **Step 4: Generate Token**
+### **Step 4:Select Locally**
+
+![image](https://github.com/user-attachments/assets/bc5f3727-f34d-40f2-8d2c-315f5a0e4c26)
+
+---
+
+### **Step 5: Generate Token**
 1. Provide a **Token Name** → Click **Generate**.  
 2. Copy the token and keep it safe.  
-3. Click **Continue**.  
+3. Click **Continue**.
+
+   ![image](https://github.com/user-attachments/assets/05f4275c-8319-43ad-8c21-8096a6719dd1)
+
 
 ---
 
-### **Step 5: Select Language**
+### **Step 6: Select Language**
 1. Choose the programming language for the project.  
-2. Copy the executable code provided.  
+2. Copy the executable code provided.
+
+   ![image](https://github.com/user-attachments/assets/0b5843ca-71fd-4d38-9228-af67a47d3430)
+
 
 ---
 
-### **Step 6: Run the Scan**
+### **Step 7: Run the Scan**
 1. Open **Command Prompt**.  
 2. Go to the project folder.  
 3. Run the command: - Paste the executable code and enter 
