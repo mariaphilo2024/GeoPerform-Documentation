@@ -71,4 +71,55 @@ SonarQube is a **quality management tool** developed by **SonarSource**.
 
 ---
 
+## **Setting Up SonarQube Locally**
+### **Step 1: Download SonarQube**
+- Download SonarQube from [https://www.sonarqube.org](https://www.sonarqube.org).  
+- Requires **Java 8+**.  
+
+---
+
+### **Step 2: Start SonarQube**
+1. Go to the **SonarQube Folder**.  
+2. Navigate to the **Bin folder** → **Windows 64**.  
+3. Double-click on `StartSonar ` - Windows batch file file.  
+4. Once **"SonarQube is up"** message appears:  
+   - Open browser → Visit **localhost:9000** (default port).  
+   - Login using:  
+     - **Username:** `admin`  
+     - **Password:** `admin`  
+   - Update with a new password.  
+
+---
+
+### **Step 3: Create a New Project**
+1. Go to **Projects** → **Create Project**.  
+2. Enter **Project Display Name** → **Project Key** is generated automatically.  
+3. Select **SetUp** → Choose **Local**.  
+
+---
+
+### **Step 4: Generate Token**
+1. Provide a **Token Name** → Click **Generate**.  
+2. Copy the token and keep it safe.  
+3. Click **Continue**.  
+
+---
+
+### **Step 5: Select Language**
+1. Choose the programming language for the project.  
+2. Copy the executable code provided.  
+
+---
+
+### **Step 6: Run the Scan**
+1. Open **Command Prompt**.  
+2. Go to the project folder.  
+3. Run the command:  
+```bash
+<copied-executable-code>
+Once the build is successful:
+
+Go to localhost:9000 in the browser.
+
+View the SonarQube report for the project.
 
