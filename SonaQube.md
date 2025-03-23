@@ -169,14 +169,17 @@ View the SonarQube report for the project.
 
 **Update the package list:**
 
- ```bash
+ ```
 
 sudo apt update
 
+ ```
 - Install Docker:
- ```bash
+  
+ ```
 sudo apt install docker.io -y
 
+ ```
 
 
 
