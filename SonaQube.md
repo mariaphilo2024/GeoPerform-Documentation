@@ -115,7 +115,7 @@ SonarQube is a **quality management tool** developed by **SonarSource**.
 1. Open **Command Prompt**.  
 2. Go to the project folder.  
 3. Run the command:  
-```bash
+
 <copied-executable-code>
 Once the build is successful:
 
