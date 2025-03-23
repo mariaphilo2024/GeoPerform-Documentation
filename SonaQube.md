@@ -114,7 +114,7 @@ SonarQube is a **quality management tool** developed by **SonarSource**.
 ### **Step 6: Run the Scan**
 1. Open **Command Prompt**.  
 2. Go to the project folder.  
-3. Run the command:  
+3. Run the command: - Paste the executable code and enter 
 
 <copied-executable-code>
 Once the build is successful:
