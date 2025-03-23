@@ -234,7 +234,7 @@ docker pull postgres:latest
      ### 2. Start SonarQube Container:
          - Run the SonarQube container and link it to the PostgreSQL container:
 
-         ```
+     ```
          
            docker run -d --name sonarqube -p 9000:9000
          --network sonarnet --env
@@ -244,7 +244,7 @@ docker pull postgres:latest
          SONARQUBE_JDBC_PASSWORD=your_password
          sonarqube:latest
 
-          ```
+      ```
 
      ## Step 4: Access SonarQube Web Interface
       ###   1. Open SonarQube:
