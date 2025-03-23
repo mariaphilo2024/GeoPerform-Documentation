@@ -234,8 +234,8 @@ docker pull postgres:latest
  - Use the default username and password: admin / admin.
 
 ## SonarQube Analysis Report
-### **Overview**
-This document provides a summary of the SonarQube analysis for the projects displayed on the dashboard. The report includes **Quality Gate status, Security issues, Reliability, Maintainability, Code Coverage, and Duplications**.
+
+SonarQube analysis for the projects displayed on the dashboard. The report includes **Quality Gate status, Security issues, Reliability, Maintainability, Code Coverage, and Duplications**.
 
 
    ![image](https://github.com/user-attachments/assets/5f2d3e45-fded-4940-8c9d-0b3557d874c4)
