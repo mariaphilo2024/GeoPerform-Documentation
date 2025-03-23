@@ -202,8 +202,7 @@ docker pull postgres:latest
  ## Step 3: Run PostgreSQL and SonarQube Containers
 
 ### 1. Start PostgreSQL Container:
-    
-    - Run the following command to create a PostgreSQL container with a username and password:
+- Run the following command to create a PostgreSQL container with a username and password:
 
     ```
       docker run -d --name postgres -e
