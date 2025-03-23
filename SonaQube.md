@@ -201,7 +201,8 @@ docker pull postgres:latest
 
  ## Step 3: Run PostgreSQL and SonarQube Containers
 
- 1. Start PostgreSQL Container:
+### 1. Start PostgreSQL Container:
+    
     - Run the following command to create a PostgreSQL container with a username and password:
 
     ```
@@ -213,7 +214,7 @@ docker pull postgres:latest
     
     - Replace your_password with a secure password.
 
-     ### 2. Start SonarQube Container:
+ ### 2. Start SonarQube Container:
     
          - Run the SonarQube container and link it to the PostgreSQL container:
 
@@ -227,14 +228,14 @@ docker pull postgres:latest
          sonarqube:latest
       ```
 
-     ## Step 4: Access SonarQube Web Interface
-      ###   1. Open SonarQube:
+ ## Step 4: Access SonarQube Web Interface
+ ###   1. Open SonarQube:
     
-            - In a web browser, go to http://<vm-ip>:9000 (replace <vm-ip> with your actual VM IP address).
+    - In a web browser, go to http://<vm-ip>:9000 (replace <vm-ip> with your actual VM IP address).
     
-     ###    2. Log In:
+ ###    2. Log In:
     
-            - Use the default username and password: admin / admin.
+    - Use the default username and password: admin / admin.
   
 
 
