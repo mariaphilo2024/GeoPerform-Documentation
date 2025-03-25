@@ -1,4 +1,4 @@
-# **SonarQube for GeoPerform**
+# **SonarQube Documentation**
 
 ## **Introduction**
 SonarQube is a **quality management tool** developed by **SonarSource**.
