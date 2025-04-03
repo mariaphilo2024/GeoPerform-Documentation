@@ -52,7 +52,8 @@ The Passage Module is divided into the following sections:
 2. Enter the required passage details.
 3. Click **Save** to store the new passage.
 
-   ![image](https://github.com/user-attachments/assets/c511e98a-4f9e-4063-a02f-45fb47aa2eea)
+   ![image](https://github.com/user-attachments/assets/5a54c302-4f53-4762-bd81-27be242e9324)
+
 
    <br>
 
