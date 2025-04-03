@@ -1,4 +1,4 @@
-# Passage Module User Manual
+# Passage Module User Manual 📘
 
 ## Introduction
 The Passage Module helps manage vessel passages, track voyage details, and generate reports.
