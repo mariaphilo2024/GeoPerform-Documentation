@@ -69,8 +69,8 @@ The VPS (Vessel Performance System) is a comprehensive application designed to t
 ## Passage Tracking
 - Users can view entire voyage paths.
 - Reports include:
-  - **Departure report** (Green icon)
-  - **Noon report** (Lighter green icon)
+  - **Departure report** (Lighter Green icon)
+  - **Noon report** ( Green icon)
   - **Arrival report** (Red icon)
 - Users can track multiple passages simultaneously.
 - Weather overlays are provided for analysis.
