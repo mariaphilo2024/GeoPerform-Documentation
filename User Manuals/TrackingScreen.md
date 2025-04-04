@@ -14,6 +14,7 @@ The Tracking Screen module provides a real-time view of vessel locations, tracki
 
   ![image](https://github.com/user-attachments/assets/77411a39-0cab-442f-a637-e69d81ff7404)
 
+<br>
 
 ### 1.1 Filtering Options
 
@@ -58,6 +59,7 @@ When a vessel group is selected and **Load** is clicked, it shows the location o
 
 ![image](https://github.com/user-attachments/assets/3e824716-9d18-48b9-8a9d-a4fc5eca2f41)
 
+<br>
 
 ## Passage Screen
 
@@ -72,6 +74,7 @@ When a vessel group is selected and **Load** is clicked, it shows the location o
 
   ![image](https://github.com/user-attachments/assets/9ce3a707-f9b9-4af8-b6af-f019f13ad90a)
 
+<br>
 
 ## Available Legends on the Map
 
