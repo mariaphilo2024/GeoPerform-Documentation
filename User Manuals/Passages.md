@@ -79,6 +79,14 @@ The Passage Module is divided into the following sections:
 1. To view **Bunker Consumption**, select **Bunker Consumptions & ROB**.
 2. You can **create, edit, and delete** fuel consumption and bunkers details.
 
+   ### Fuel Table Fields
+
+- **Fuel Type** – Name of the fuel type.  
+- **Category** – Category of the fuel.  
+- **Units** – Measurement unit used for the fuel (e.g., metric tons, liters).  
+- **Consumed** – Total amount of fuel consumed in the given unit.  
+
+
    ![image](https://github.com/user-attachments/assets/c738a736-c93f-4409-921f-c18ff58c7afe)
 
    <br>
