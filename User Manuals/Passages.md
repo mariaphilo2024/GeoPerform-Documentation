@@ -52,6 +52,18 @@ The Passage Module is divided into the following sections:
 2. Enter the required passage details.
 3. Click **Save** to store the new passage.
 
+ ## Passage Table Fields
+
+- **Voyage Number** – Unique identifier for the voyage.
+- **Load Condition** – Indicates whether the vessel is **Ballast** (sailing without cargo) or **Laden** (carrying cargo).
+- **Departure Port** – Name of the port where the vessel departed.
+- **Start Of Sea Passage (UTC)** – Date and UTC time of departure.
+- **Departure Time Zone** – Time zone of the departure port.
+- **Arrival Port** – Name of the port where the vessel arrived.
+- **End Of Sea Passage (UTC)** – Date and UTC time of arrival.
+- **Arrival Time Zone** – Time zone of the arrival port.
+
+
    ![image](https://github.com/user-attachments/assets/5a54c302-4f53-4762-bd81-27be242e9324)
 
 
