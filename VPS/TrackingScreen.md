@@ -45,7 +45,7 @@ The VPS (Vessel Performance System) is a comprehensive application designed to t
 - Selecting a vessel displays:
   - Voyage details (departure/arrival ports & dates)
   - Displays vessel positions on the map.
-  - Key Performance Analytics (KPA) (for single vessel selection)
+  - Key Performance  Indicator (KPI) (for single vessel selection)
     - Helps identify performance deviations (if a vessel is slower than expected).
     - Detects excessive fuel usage, optimizing costs.
     - Assesses weather impact on the voyage.
