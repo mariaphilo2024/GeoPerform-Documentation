@@ -52,7 +52,7 @@ The Passage Module is divided into the following sections:
 2. Enter the required passage details.
 3. Click **Save** to store the new passage.
 
- ## Passage Table Fields
+ ### Passage Table Fields
 
 - **Voyage Number** – Unique identifier for the voyage.
 - **Load Condition** – Indicates whether the vessel is **Ballast** (sailing without cargo) or **Laden** (carrying cargo).
