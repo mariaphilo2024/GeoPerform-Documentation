@@ -135,9 +135,9 @@ The Passage Module is divided into the following sections:
 
 3. **Weather** – Shows information on wind, wave, and current directions and heights.
 
-# Sea Passage Report - Weather Section
+### Sea Passage Report - Weather Section
 
-## Fields and Descriptions
+### Fields and Descriptions
 
 | Field Name             | Description |
 |------------------------|-------------|
