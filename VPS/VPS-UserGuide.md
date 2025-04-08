@@ -150,7 +150,7 @@ The EMS Module helps manage vessel emissions, track compliance, and generate rep
   - **Inactive** – Displays only vessels with inactive status.  
 
 
-### **3. Select Vessel **
+### **3. Select Vessel**
 - Click the **Vessel** dropdown.  
 - Choose a specific vessel from the list (e.g., `ACACIA`).  
 
