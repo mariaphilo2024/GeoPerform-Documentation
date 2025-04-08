@@ -99,7 +99,7 @@ The Passage Module is divided into the following sections:
 ## Report Section has 2 Tabs
 1. **General** – Displays vessel position, speed, distance, and related details.
 
-## Sea Passage Report Fields 
+### Sea Passage Report Fields 
 
 
 - **Type**: Select the type of report (e.g., Start of Sea Passage).
