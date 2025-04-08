@@ -29,7 +29,7 @@ However, **report modification or data entry is not permitted** within this modu
   - **Inactive** – Displays only vessels with inactive status.  
 
 
-### **3. Select Vessel **
+### **3. Select Vessel**
 - Click the **Vessel** dropdown.  
 - Choose a specific vessel from the list (e.g., `ACACIA`).  
 
