@@ -99,21 +99,17 @@ The Passage Module is divided into the following sections:
 ## Report Section has 2 Tabs
 1. **General** – Displays vessel position, speed, distance, and related details.
 
-# Sea Passage Report Fields 
+## Sea Passage Report Fields 
 
-## General Information
+
 - **Type**: Select the type of report (e.g., Start of Sea Passage).
 - **Voyage Number**: Unique identifier for the voyage.
-
-## Position Information
 - **Date / Time (Local)**: Date and time of the report in local time.
 - **Time Zone Offset**: Offset from UTC for the current location.
 - **Latitude**: Latitude coordinate in degrees, minutes, and direction (N/S).
 - **Longitude**: Longitude coordinate in degrees, minutes, and direction (E/W).
 - **COG (Course Over Ground)**: The actual course of the vessel over the ground.
 - **SOG (Speed Over Ground)**: The vessel’s speed relative to the ground (knots).
-
-## Performance & Distance Metrics
 - **Ordered Speed**: The speed the vessel is instructed to maintain (knots).
 - **Steaming Hours**: Total number of hours the vessel has been in motion.
 - **Distance to Go**: Remaining distance to the destination (nautical miles).
@@ -121,17 +117,11 @@ The Passage Module is divided into the following sections:
 - **Distance Through Water**: Distance traveled through water, considering current effects (nautical miles).
 - **Engine Distance**: Distance covered based on engine performance (nautical miles).
 - **Slip (%)**: Percentage of slip calculated based on propeller efficiency.
-
-## Engine & Power Metrics
 - **Average RPM**: Average revolutions per minute of the engine.
 - **Average KW**: Average power output in kilowatts (BHP - Brake Horse Power).
-
-## Draft & Cargo Information
 - **Fwd Draft**: Forward draft measurement (depth of the vessel at the bow).
 - **Aft Draft**: Aft draft measurement (depth of the vessel at the stern).
 - **Cargo Temp**: Temperature of the cargo.
-
-## Port Information
 - **Port**: Select the nearest port or last port of call.
 
 ---
