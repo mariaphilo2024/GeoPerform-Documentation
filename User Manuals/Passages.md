@@ -157,7 +157,8 @@ The Passage Module is divided into the following sections:
 
 
 
-   ![image](https://github.com/user-attachments/assets/92104f1c-1038-4ef7-b7cb-504e3bbb63cd)
+   ![image](https://github.com/user-attachments/assets/9e25036c-0b8b-491c-b64b-da3e1bf33acf)
+
 
    <br>
 
