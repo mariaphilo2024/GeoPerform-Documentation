@@ -178,7 +178,7 @@ The Passage Module is divided into the following sections:
 | **Barge Cast Off (Local)**           | The local date and time when the barge left after the bunkering process. |
 | **Port**                             | The port where the bunkering took place. |
 
-## **Fuel Details**
+### **Fuel Details**
 | Field Name                     | Description |
 |---------------------------------|-------------|
 | **Fuel Type**                   | The type of fuel being bunkered (e.g., 05S, VLSFO, MGO). |
@@ -187,7 +187,7 @@ The Passage Module is divided into the following sections:
 | **Fuel Density**                | The density of the fuel supplied. |
 | **Sulphur Content**             | The sulphur content of the supplied fuel. |
 
-## **Notes**
+### **Notes**
 - All **date/time** fields follow the local time zone.
 - The **Fuel Type** is selected from a predefined list.
 - The **BDN Number** is a unique reference for the bunker supply.
