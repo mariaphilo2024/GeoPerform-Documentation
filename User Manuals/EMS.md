@@ -1,5 +1,5 @@
 ## 🌍 3. EMS (Emission Management System) Module
-The EMS Module helps manage vessel emissions, track compliance, and generate reports for various environmental regulations.
+The **EMS Module** helps manage vessel emissions, track compliance, and generate reports for various environmental regulations.
 The **EMS Module** allows users to **view reports** based on selected **filter options**.  
 Users can refine their search by applying various filters to retrieve specific reports efficiently.  
 However, **report modification or data entry is not permitted** within this module.
