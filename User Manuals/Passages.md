@@ -135,6 +135,28 @@ The Passage Module is divided into the following sections:
 
 3. **Weather** – Shows information on wind, wave, and current directions and heights.
 
+# Sea Passage Report - Weather Section
+
+## Fields and Descriptions
+
+| Field Name             | Description |
+|------------------------|-------------|
+| **Date / Time (Local)** | The local date and time when the report is created. |
+| **Time Zone Offset**   | The time zone offset from UTC for the current location. |
+| **Voyage Number**      | Unique identifier for the ongoing voyage. |
+| **Wind**              | The wind speed measured in Beaufort scale (BF). |
+| **Wind Direction**    | The direction from which the wind is coming (e.g., North, South). |
+| **Sea Height**        | The height of the waves at sea, measured in meters (m). |
+| **Sea Direction**     | The direction in which the sea waves are moving. |
+| **Swell Height**      | The height of the swell waves, measured in meters (m). |
+| **Swell Direction**   | The direction of the swell waves. |
+| **Sea Water Temp**    | The temperature of the seawater, measured in degrees Celsius (°C). |
+| **Air Temp**          | The temperature of the air at the reporting location, measured in degrees Celsius (°C). |
+| **Atmospheric Pressure** | The atmospheric pressure at sea level, measured in kilopascals (kPa). |
+
+
+
+
    ![image](https://github.com/user-attachments/assets/92104f1c-1038-4ef7-b7cb-504e3bbb63cd)
 
    <br>
