@@ -162,6 +162,42 @@ The Passage Module is divided into the following sections:
 
    <br>
 
+   ### Bunker Report
+
+### Fields and Descriptions
+
+| Field Name                          | Description |
+|--------------------------------------|-------------|
+| **Supplier**                        | The name of the fuel supplier. |
+| **Barge Name**                       | The name of the barge supplying the bunker fuel. |
+| **Barge Alongside (Local)**          | The local date and time when the barge arrived alongside the vessel. |
+| **Bunker Hose Connected (Local)**    | The local date and time when the bunker hose was connected. |
+| **Commenced Bunkering (Local)**      | The local date and time when the bunkering process started. |
+| **Bunkering Completed (Local)**      | The local date and time when the bunkering process was completed. |
+| **Bunker Hose Disconnected (Local)** | The local date and time when the bunker hose was disconnected. |
+| **Barge Cast Off (Local)**           | The local date and time when the barge left after the bunkering process. |
+| **Port**                             | The port where the bunkering took place. |
+
+## **Fuel Details**
+| Field Name                     | Description |
+|---------------------------------|-------------|
+| **Fuel Type**                   | The type of fuel being bunkered (e.g., 05S, VLSFO, MGO). |
+| **Qty Lifted Mt (BDN Fig)**     | The quantity of fuel lifted in metric tons as per the Bunker Delivery Note (BDN). |
+| **BDN Number**                  | The reference number from the Bunker Delivery Note. |
+| **Fuel Density**                | The density of the fuel supplied. |
+| **Sulphur Content**             | The sulphur content of the supplied fuel. |
+
+## **Notes**
+- All **date/time** fields follow the local time zone.
+- The **Fuel Type** is selected from a predefined list.
+- The **BDN Number** is a unique reference for the bunker supply.
+- **Fuel Density** and **Sulphur Content** are important for regulatory compliance.
+
+![image](https://github.com/user-attachments/assets/5e71e779-2438-43de-9899-686cbc8e320c)
+
+<br>
+
+
 
 This user manual provides guidance on efficiently using the Passage Module to manage vessel voyages and reports.
 
